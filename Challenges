@@ -313,3 +313,42 @@ def reversed_list(lst1, lst2):
       return False
   return True
 
+############################################################Python Code Challenges: Dictionaries
+1. Sum Values
+For the first code challenge, we are going to look at only the values in a dictionary. This function should sum up all of the values from the key-value pairs in the dictionary. Here are the steps we need:
+
+Define the function to accept one parameter for our dictionary
+Create a variable to keep track of our sum
+Loop through every value in the dictionary
+Inside the loop, add each value to the sum
+Return the sum
+def sum_values(my_dictionary):
+  counter = 0
+  for i in my_dictionary:
+    counter += my_dictionary[i]
+  return counter
+2. Even Keys
+Next, we are going to do something similar, but we are going to use the keys in order to retrieve the values. Additionally, we are going to only look at every even key within the dictionary. Here are the steps:
+
+Define the function to accept one parameter for our dictionary
+Create a variable to keep track of our sum
+Loop through every key in the dictionary
+Inside the loop, if the key is even, add the value from the even key
+After the loop, return the sum
+def sum_even_keys(my_dictionary):
+  total = 0
+  for key in my_dictionary:
+    if key % 2 == 0:
+      total += my_dictionary[key]
+  return total
+3. Add Ten
+Let’s loop through the keys again, but this time let’s modify the values within the dictionary. Our function should add 10 to every value in the dictionary and return the modified dictionary. Here is what we need to do:
+
+Define the function to accept one parameter for our dictionary
+Loop through every key in the dictionary
+Retrieve the value using the key and add 10 to it. Make sure to re-save the new value to the original key.
+After the loop, return the modified dictionary
+def add_ten(my_dictionary):
+  for key in my_dictionary:
+      my_dictionary[key] += 10
+  return my_dictionary
