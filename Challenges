@@ -352,3 +352,36 @@ def add_ten(my_dictionary):
   for key in my_dictionary:
       my_dictionary[key] += 10
   return my_dictionary
+4. Values That Are Keys
+We are making a program that will create a family tree. Using a dictionary, we want to return a list of all the children who are also parents of other children. Using dictionaries we can consider those people to be values which are also keys in our dictionary of family data. Here is what we need to do:
+
+Define the function to accept one parameter for our dictionary
+Create an empty list to hold the values we find
+Loop through every value in the dictionary
+Inside the loop, test if the current value is a key in the dictionary. If it is then append it to the list of values we found
+After the loop, return the list of values which are also keys
+
+def values_that_are_keys(my_dictionary):
+  my_list = []
+  for value in my_dictionary.values():
+    if value in my_dictionary:
+      my_list.append(value)
+  return my_list
+5. Largest Value
+For the last challenge, we are going to create a function that is able to find the maximum value in the dictionary and return the associated key. This is a twist on the max algorithm since it is using a dictionary rather than a list. These are the steps:
+
+Define the function to accept one parameter for our dictionary
+Initialize the starting key to a very low number
+Initialize the starting value to a very low number
+Iterate through the dictionary’s key/value pairs.
+Inside the loop, if the current value is larger than the current largest value, replace the largest key and largest value with the current ones you are looking at
+Once you are done iterating through all key/value pairs, return the key which has the largest value
+
+def max_key(my_dictionary):
+  max_num = 0
+  max_key = 0
+  for key in my_dictionary:
+    if my_dictionary[key] > max_num:
+      max_num = my_dictionary[key]
+      max_key = key
+  return max_key
