@@ -550,3 +550,38 @@ class DriveBot:
         DriveBot.counter += 1
         self.id = DriveBot.counter
         # Assign an `id` to the robot when it is constructed by incrementing the counter and assigning the value to `id`
+# Write Python 3 code in this online editor and run it.
+print("Try programiz.pro")
+
+def is_palindrome(word1, word2):
+    if word1 == word2[::-1]:
+        return True
+    return False
+    
+print(is_palindrome("aba", "aba"))
+print(is_palindrome("aba", "ab2"))
+
+def merge_dicts(d1, d2):
+    new_dict = {}
+    for key1 in d1:
+        if key1 in d2:
+            new_dict[key1] = d1[key1] + d2[key1]
+        else:
+            new_dict[key1] = d1[key1]
+    for key2 in d2:
+        if key2 not in new_dict:
+            new_dict[key2] = d2[key2]
+    return new_dict
+    
+print(merge_dicts({'a':1,'b':2}, {'b':3,'c':4}))
+
+def filter_range(nums, low, high):
+    rage_nums = []
+    for num in nums:
+        if num >= low and num <= high:
+            rage_nums.append(num)
+    return rage_nums
+    
+print(filter_range([2,4,6,2,7,2,6,4,10,1,-2, 7, 24, 26], 0,5))
+
+    
