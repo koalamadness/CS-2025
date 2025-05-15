@@ -10,3 +10,11 @@ posto
 a-t-il
 challenge
 ich will nut dich
+Pick a favorite language from SpringBoot + React or C# + ASP.net
+Split the creation of a todo app into tasks. It should have a minimum of 5 tasks (scaffold, db creation, add feature, delete feature, edit feature). You may want to split the front and back end into separate tasks too.
+Pick a task, code it up.
+Add the code to a commit in git.
+Do the same for the rest of the tasks.
+Deploy the app to your favorite free tier of aws or azure.
+Make a change to your app. This change is another task. Commit the code to your git repo.
+Deploy your updated version.
