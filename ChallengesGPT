@@ -1,0 +1,2 @@
+def not_five(a, b):
+    return (abs(a) - abs(b)) == 5
