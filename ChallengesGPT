@@ -9,3 +9,15 @@ Ejemplo:
 Input: a = 12, b = 8 → not_five = False (|12–8| == 4)
 
 Input: a = 20, b = 14 → not_five = True (|20–14| == 6)
+Multiple Of Seven
+
+Descripción: Dada una lista de números, cuenta cuántos de ellos son múltiplos de 7 y devuelve ese conteo.
+
+Ejemplo:
+
+Input: [7, 14, 15, 21, 22, 28] → 4
+
+Input: [1, 2, 3, 4, 5, 6] → 0
+
+def multiple_seven(lst):
+    return len([x for x in lst if x % 7 == 0])
