@@ -1,2 +1,11 @@
-def not_five(a, b):
-    return (abs(a) - abs(b)) == 5
+
+******************* CUIDADO QUE HACE JAIMICOS *******************
+Check Difference To Five
+
+Descripción: Dados dos números, comprueba si la diferencia absoluta entre ellos es diferente de 5. Guarda True en not_five, o False en caso contrario.
+
+Ejemplo:
+
+Input: a = 12, b = 8 → not_five = False (|12–8| == 4)
+
+Input: a = 20, b = 14 → not_five = True (|20–14| == 6)
