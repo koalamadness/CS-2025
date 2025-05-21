@@ -87,3 +87,18 @@ But no one remembers her name, only that she never returned.
 """
 
 print(find_one_appearance_both_text(texto1, texto2))
+
+
+Dada una lista de nombres (con posibles repeticiones y distintos formatos de mayúsculas), devuelve cuántos nombres únicos hay ignorando mayúsculas/minúsculas.
+
+def unique_list(name_list):
+    
+    lower = []
+
+    for name in name_list:
+        lower.append(name.lower()) 
+
+    return len(set(lower))
+
+print(unique_list(["PePe", "pEPe", "Uriel"]))
+
