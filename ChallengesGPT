@@ -47,3 +47,43 @@ def three_most_common(sentence):
             break
     
     return three_common_list
+
+4.
+Dados dos textos, encuentra las palabras que aparecen en ambos textos, pero no aparecen más de una vez en cada uno.
+
+def find_one_appearance_both_text(text1, text2):
+    text1 = text1.lower().split()
+    text2= text2.lower().split()
+
+    unique_word_list = []
+
+    for word in text1:
+        if word in text2 and text1.count(word) == 1 and text2.count(word) == 1:
+            unique_word_list.append(word)
+    
+
+    for word in text2:
+        if word in text1 and text1.count(word) == 1 and text2.count(word) == 1:
+            unique_word_list.append(word)
+    
+      
+
+    return set(unique_word_list)
+
+
+
+texto1 = """
+In the quiet town of Eldermoor, a librarian named Clara discovered an old, dusty book hidden between the shelves.
+She opened it, revealing a map and strange symbols. Clara, curious and brave, followed the map deep into the forest.
+There, she encountered a wolf—not a normal one, but a silver creature with glowing eyes.
+It spoke, offering knowledge in exchange for a name. Clara accepted.
+"""
+
+texto2 = """
+Miles away from Eldermoor, in the city of Graystone, a historian uncovered a sealed scroll in an attic.
+The scroll detailed the journey of a silver wolf and a brave girl who entered a forgotten forest.
+Legends say the wolf could speak, revealing knowledge long lost to mankind.
+But no one remembers her name, only that she never returned.
+"""
+
+print(find_one_appearance_both_text(texto1, texto2))
