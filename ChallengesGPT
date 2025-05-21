@@ -21,3 +21,29 @@ Input: [1, 2, 3, 4, 5, 6] → 0
 
 def multiple_seven(lst):
     return len([x for x in lst if x % 7 == 0])
+
+Dado un texto largo, devuelve las 3 palabras más frecuentes (ignorando mayúsculas y puntuación).
+Ejemplo de entrada: "Hello, hello! How are you? Are you okay?"
+# no special characters
+def three_most_common(sentence):
+    most_common_dict = {}
+    three_common_list = []
+    word_list = sentence.lower().split()
+
+    for word in word_list:
+        if word not in most_common_dict:
+            most_common_dict[word] = 1
+        else:
+            most_common_dict[word] += 1
+
+    sorted_items_desc = sorted(most_common_dict.items(), key=lambda item: item[1], reverse=True)
+    sorted_dict_desc = dict(sorted_items_desc)
+    print(sorted_dict_desc)
+
+    for i in range(3):
+        for w in sorted_dict_desc:
+            del sorted_dict_desc[w]
+            three_common_list.append(w)
+            break
+    
+    return three_common_list
