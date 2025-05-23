@@ -31,3 +31,61 @@ public class Human(){
 
 Which of the following is NOT true about mutator methods.
 
+public class MyDemoClass{
+  
+  public static int variableA = 4;
+  public int variableB;
+  
+  public MyDemoClass(){
+    variableA += 1;
+    this.variableB = 4;
+  }
+  
+  public static void main(String[] args){
+    
+    MyDemoClass myObject = new blank 1;
+    System.out.println(blank 2.blank 3);
+  }
+  
+}
+
+public class ATM{
+  public static int totalMoney = 0;
+  
+  public ATM(){
+    totalMoney += 5;
+  }
+  
+  public static void main(String[] args){
+
+    System.out.println(ATM.totalMoney); //Line 1
+    
+    ATM myATM = new ATM();
+    System.out.println(ATM.totalMoney); //Line 2
+    System.out.println(myATM.totalMoney); //Line 3
+    
+    ATM mySecondATM = new ATM();
+    System.out.println(ATM.totalMoney); //Line 4
+    System.out.println(myATM.totalMoney); //Line 5 
+  }
+  
+}
+
+public class ATM{
+  public static int totalMoney = 0;
+  
+  public int money;
+  
+  public ATM(int money){
+    this.money = money;
+  }
+  
+  public static int getMoney(){
+    return this.money;
+  }
+  
+  public int getTotalMoney(){
+    return totalMoney;
+  }
+  
+}
