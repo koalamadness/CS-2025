@@ -1,0 +1,33 @@
+class myDemoClass(){
+  
+  int demoInstanceVariable;
+  
+  public void methodOne(){
+    this.methodTwo(this);
+  }
+  
+  public void methodTwo(myDemoClass a){
+    System.out.println(a.demoInstanceVariable);
+  }
+  
+}
+
+public class Human(){
+  public String name;
+  
+  public Human(String inputName){
+    this.name = inputName;
+  }
+  
+  public void sayName(String name){
+    System.out.println("My name is " + name);
+  }
+  
+  public static void main(String[] args){
+    Human hero = new Human("Clark Kent");
+    hero.sayName("Superman");
+  }
+}
+
+Which of the following is NOT true about mutator methods.
+
