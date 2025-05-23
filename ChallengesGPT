@@ -1,4 +1,4 @@
-log chechout reset init alias config --global add commit status log diff .gitignore reset --hard reflog
+log chechout reset init alias config --global add commit status log diff .gitignore reset --hard reflog revert tag tags/
 ******************* CUIDADO QUE HACE JAIMICOS *******************
 Check Difference To Five
 
