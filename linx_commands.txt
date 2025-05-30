@@ -9,3 +9,13 @@ echo $name
 echo "$bankname was founded in $founded by $ceo"
 
 history
+
+pwd 
+
+filepath
+
+relative absolute paths cd ..
+
+/User -- slash / means root 
+
+cat
