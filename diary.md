@@ -21,3 +21,7 @@
 +  rm -r passwords/
 +  cp 2020.csv backups/
 +  grep "CRITICAL" 2024-01-10.log
+
+## 2025/05/04
+###Java
++ Snake Game until snakeHead movement
