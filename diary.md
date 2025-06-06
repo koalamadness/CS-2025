@@ -25,3 +25,7 @@
 ## 2025/05/04
 ###Java
 + Snake Game until snakeHead movement
++ Tiobe Index
++ Processor Nucleus (?
+  ![image](https://github.com/user-attachments/assets/51b3e295-1782-4d83-87eb-208c06ee9006)
++ .class Bytecode -> JVM
