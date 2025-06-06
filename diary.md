@@ -3,6 +3,7 @@
 ## 2025/06/06
 ###Java
 + Snake Game completed
+![image](https://github.com/user-attachments/assets/81563550-12e4-4895-b536-0c1c35dd7351)
 
 ## 2025/06/05
 ###Java
