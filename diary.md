@@ -1,5 +1,19 @@
 # Computer Science 
 
+## 2025/05/04
+###Java
++ Snake Game completed
+
+## 2025/06/05
+###Java
++ Snake Game until snakeHead movement
++ Tiobe Index
++ Processor Nucleus (?
+  ![image](https://github.com/user-attachments/assets/51b3e295-1782-4d83-87eb-208c06ee9006)
++ .class Bytecode -> JVM
+### Linux
++UNiplexed Information Computing System. The Full Form of UNIX (also referred to as UNICS) is UNiplexed Information Computing System
+
 ## 2025/06/04
 ###Java
 + Build tools Maven Gradel
@@ -22,12 +36,4 @@
 +  cp 2020.csv backups/
 +  grep "CRITICAL" 2024-01-10.log
 
-## 2025/05/04
-###Java
-+ Snake Game until snakeHead movement
-+ Tiobe Index
-+ Processor Nucleus (?
-  ![image](https://github.com/user-attachments/assets/51b3e295-1782-4d83-87eb-208c06ee9006)
-+ .class Bytecode -> JVM
-### Linux
-+UNiplexed Information Computing System. The Full Form of UNIX (also referred to as UNICS) is UNiplexed Information Computing System
+
