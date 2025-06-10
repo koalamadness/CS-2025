@@ -1,5 +1,9 @@
 # Computer Science 
 
+## 2025/06/10
+###Java
++ Started Chrome Dinosaur 
+
 ## 2025/06/06
 ###Java
 + Snake Game completed
