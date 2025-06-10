@@ -2,7 +2,25 @@
 
 ## 2025/06/10
 ###Java
-+ Started Chrome Dinosaur 
++ Started Chrome Dinosaur
++ @Controller & RequestMapping Annotation
++ endpoint example: /about /contact
+  ![image](https://github.com/user-attachments/assets/b0362923-09dd-4f7c-a18a-524425e7e403)
++ mapping mistake
+  ![image](https://github.com/user-attachments/assets/ba685e42-ff95-4924-854e-a32591d20d99)
++ breakpoint: marker to tell the IDE where to pause || step over / step into / step out
++ build project automatically / allow automake
++ settings: port, DB credentials, custom
++ @Value() will get value associated with key and inject it
++ Configuring Application Properties
+  ![image](https://github.com/user-attachments/assets/85775be4-8e6b-4316-9e48-41d84e0fe895)
+  ![image](https://github.com/user-attachments/assets/a1fc22dc-576d-4682-b09b-9824c522ecf6)
++ Dependency Injection
++ Tightly coupled / decouple
+ ![image](https://github.com/user-attachments/assets/2839fb2c-9aef-47d2-80f0-a29e0c14de83)
++ Inject object into a class
+
+
 
 ## 2025/06/06
 ###Java
