@@ -3,6 +3,15 @@
 ## 2025/06/11
 ###Java
 + Chrome Dinosaur Completed
++ Primitive types access RAM
+ ![image](https://github.com/user-attachments/assets/4cfcb5b1-7bc4-4639-9ad0-84b02973aa72)
++ Does not allow the use of non-initialized variable
+![image](https://github.com/user-attachments/assets/f3f4a2be-d028-4246-81aa-6427aecf99f6)
+![image](https://github.com/user-attachments/assets/bd0a1891-692a-4064-adc3-369c16058f13)
+![image](https://github.com/user-attachments/assets/7c46a4b9-f1dd-4ce6-aa68-783b5f6e7163)
+
+
+
   
 ## 2025/06/10
 ###Java
