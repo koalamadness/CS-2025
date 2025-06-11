@@ -1,5 +1,9 @@
 # Computer Science 
 
+## 2025/06/11
+###Java
++ Chrome Dinosaur Completed
+  
 ## 2025/06/10
 ###Java
 + Started Chrome Dinosaur
