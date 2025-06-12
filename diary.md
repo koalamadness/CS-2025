@@ -10,6 +10,7 @@
 ![image](https://github.com/user-attachments/assets/bd0a1891-692a-4064-adc3-369c16058f13)
 ![image](https://github.com/user-attachments/assets/7c46a4b9-f1dd-4ce6-aa68-783b5f6e7163)
 ![image](https://github.com/user-attachments/assets/34a07f83-16c3-49fc-9593-92632938cbd8)
++Constructor for all required dependencies, setters for optional dep 
 
   
 ## 2025/06/10
