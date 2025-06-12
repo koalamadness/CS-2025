@@ -10,8 +10,25 @@
 ![image](https://github.com/user-attachments/assets/bd0a1891-692a-4064-adc3-369c16058f13)
 ![image](https://github.com/user-attachments/assets/7c46a4b9-f1dd-4ce6-aa68-783b5f6e7163)
 ![image](https://github.com/user-attachments/assets/34a07f83-16c3-49fc-9593-92632938cbd8)
-+Constructor for all required dependencies, setters for optional dep 
++Constructor for all required dependencies, setters for optional dep
++What is an embbeded server? Ex. Tomcat, Yeti etc
++ Actuator
++ 
+Dependency Injection - is nothing but a buzz phrase that means giving a class it's variables from outside the class. If you have a setter method that passes in an object reference to set a variable, that's dependency injection. If you have a constructor that passes in an object reference to set a variable, that's dependency injection. If you use an annotation to have a container (such as glassfish, jboss, etc.) inject an instance variable, that's dependency injection. It's just a fancy buzz word for something that you more than likely have already done using constructors and setters.
 
+Maven - is a build tool. What is a build tool? It is a tool to compile, test and then package up your application into whatever format you like i.e. jar, war, ear, etc. Maven provides a default project structure (directory structure) and a pom file (this is just a config file in xml) to configure how you want to do the above operations on your project e.g. you may want to skip some tests, you may want to have your jar file put into certain locations, etc. Maven also provides dependency management (of libraries you need in your project) and "plugins" that greatly extend it's use. For example, you can add plugins to generate reports about your project such as code coverage, unit test coverage, etc. There a tons of plugins for different things. Good thing about Maven is that everything you do in it is managed from the pom file. No need to download plugins manually and configure them, etc. It's all done by writing it into the pom. If I were you I would use maven in every project. I love it. The default ant scripts that are used in Netbeans, eclipse, etc. aren't as good in my opinion.
+
+What's a framework (in java) - in layman's terms, it's nothing but a collection of jar files (aka "libraries" or "api's") that contain some handy code written by nice people to perform a given task, so that you don't have to write that stuff yourself from scratch. A framework is geared towards different things of course. You could have a framework that is aimed at creating web applications, managing databases, etc.
+
+Spring - is an application framework. In saying that, it's quite broad. It covers many things such as web app creation, transaction management, dependency injection (using annotations, which isn't provided by default in standard java libraries, but I'm open to correction on that), etc. I wouldn't get bogged down in Spring (or frameworks in general) just yet. Out of all the frameworks, I personally found it to be not so beginner friendly.
+
+JUnit - is a "unit testing" library. It let's you write tests for your classes methods i.e. if I pass X into method Y, make sure the result coming back out is always Z; or not depending on your required functionality.
+
+Buzzwords, in my opinion, do nothing but stifle beginners when all they describe are very simple things. Here's a couple that got me early on that I have also used above:
+
+Library/Libraries - a jar file / jar files that provide specific functionality. e.g. JUnit is a jar file that contains classes that will test your code, ApachePOI is a jar file that contains classes that let you perform operations on excel documents.
+
+API - An API describes what a library should do, it doesn't actually implement it. For example, the Java Persistence API (JPA) is a specification (a document from a bunch of Java experts) that says: if you want to manage (create, read, update, delete) stuff in a database using Java, here is what you should do. Then anyone is free to take that specification and implement it how they see fit. By doing this you get many different flavours of JPA e.g. Hibernate, TopLink, OpenJPA. Each has their own interpretation of the specification. The above three are now "libraries", that are based off the API/specification.
   
 ## 2025/06/10
 ###Java
