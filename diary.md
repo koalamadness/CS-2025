@@ -49,7 +49,7 @@ API - An API describes what a library should do, it doesn't actually implement i
 + Tightly coupled / decouple
  ![image](https://github.com/user-attachments/assets/2839fb2c-9aef-47d2-80f0-a29e0c14de83)
 + Inject object into a class
-
++ https://dethstrobe.com/blog/20250118-10-things-i-wish-i-knew/
 
 
 ## 2025/06/06
