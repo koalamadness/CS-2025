@@ -1,6 +1,12 @@
 # Computer Science 
 
-## 2025/06/11
+
+## 2025/06/13
+###Java
++ var needs to be initialized
++ Start of Sandfoundry quiz
+
+## 2025/06/12
 ###Java
 + Chrome Dinosaur write & read to file
 + CMS Content Management System
