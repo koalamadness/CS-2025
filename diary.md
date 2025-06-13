@@ -2,6 +2,10 @@
 
 ## 2025/06/11
 ###Java
++ Chrome Dinosaur write & read to file 
+  
+## 2025/06/11
+###Java
 + Chrome Dinosaur Completed
 + Primitive types access RAM
  ![image](https://github.com/user-attachments/assets/4cfcb5b1-7bc4-4639-9ad0-84b02973aa72)
