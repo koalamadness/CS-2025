@@ -5,6 +5,13 @@
 ###Java
 + var needs to be initialized
 + Start of Sandfoundry quiz
+  ![image](https://github.com/user-attachments/assets/cf4ffbe0-ba28-44c0-b784-30dfc479ca56)
+  ![image](https://github.com/user-attachments/assets/1653491c-c25d-4b7f-8487-0d3a2377e4ec)
+  ![image](https://github.com/user-attachments/assets/e52222b0-3c45-4363-b626-685cc91f2ac6)
+  ![image](https://github.com/user-attachments/assets/113ed578-b968-405f-88cc-b3944d7d6638)
+
+
+
 
 ## 2025/06/12
 ###Java
