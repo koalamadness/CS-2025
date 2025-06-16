@@ -11,6 +11,7 @@
 Resultado sería desbordado, pero compilación = legal.
 ![image](https://github.com/user-attachments/assets/fe90e978-a27d-4d57-990f-5ce9a00bc457)
 ![image](https://github.com/user-attachments/assets/b20a569d-3c01-4f9a-ae47-40384b35414f)
++ Maven Repository -> Thymeleaf -> Pom -> Synchro -> Controller -> return "index" (/templates)
 
 ## 2025/06/13
 ###Java
