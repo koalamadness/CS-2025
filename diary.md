@@ -3,7 +3,12 @@
 ## 2025/06/16
 ###Java
 + Space Invaders started
++  Opción: -3.4e+038
+🟢 Correcto: float en Java tiene un rango de aproximadamente ±3.4e38, así que sí cabe.
++✅ Legal, aunque pierde precisión:
+1000L no cabe en un byte (>127), pero el cast es explícito, así que compila.
 
+Resultado sería desbordado, pero compilación = legal.
 ## 2025/06/13
 ###Java
 + var needs to be initialized
