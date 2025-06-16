@@ -9,6 +9,8 @@
 +✅ Legal, aunque pierde precisión:
 1000L no cabe en un byte (>127), pero el cast es explícito, así que compila.
 Resultado sería desbordado, pero compilación = legal.
+![image](https://github.com/user-attachments/assets/fe90e978-a27d-4d57-990f-5ce9a00bc457)
+![image](https://github.com/user-attachments/assets/b20a569d-3c01-4f9a-ae47-40384b35414f)
 
 ## 2025/06/13
 ###Java
