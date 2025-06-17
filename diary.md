@@ -15,7 +15,11 @@ Resultado sería desbordado, pero compilación = legal.
 ![image](https://github.com/user-attachments/assets/10e2ec3e-6ad9-42b2-9c1c-b99b0205d8f8)
 ![image](https://github.com/user-attachments/assets/b0500e20-969b-4d6c-a726-1a79e765a3f4)
 ![image](https://github.com/user-attachments/assets/7c60aa99-2261-478c-a309-4f5ab6cefb96)
-+ /target made by Maven 
++ /target made by Maven
++ Configure beans using annotations
+![image](https://github.com/user-attachments/assets/919c3b9c-5a8c-4610-9037-ade2723b79e7)
+![image](https://github.com/user-attachments/assets/65e1ac73-c670-4871-8c97-48c268804072)
+
 
 ## 2025/06/13
 ###Java
