@@ -4,6 +4,9 @@
 ###Java
 + Space Invaders not done
 + At least one number in division should be double to get double type as a result
+###GIT
++ Cherry-pick
++ Rebase
 
 ## 2025/06/16
 ###Java
