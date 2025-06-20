@@ -2,6 +2,7 @@
 ## 2025/06/20
 ###Java
 +Basic RESTful service
+![image](https://github.com/user-attachments/assets/f42b70cf-ddef-40ea-acb2-7c60dd592c31)
 
 ## 2025/06/19
 ###Java
