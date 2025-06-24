@@ -1,4 +1,10 @@
 # Computer Science 
+
+## 2025/06/24
+###Java
+-POM.XML
+![image](https://github.com/user-attachments/assets/dca5308a-9d7b-411b-8f73-46d6d2410c32)
+
 ## 2025/06/20
 ###Java
 +Basic RESTful service
