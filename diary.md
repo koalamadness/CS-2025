@@ -1,5 +1,9 @@
 # Computer Science 
 
+## 2025/06/25
++ Set up PostGreSQL in Docker
+
+
 ## 2025/06/24
 ###Java
 ![image](https://github.com/user-attachments/assets/4ccf7f2c-a290-4a09-9d98-b00725263764)
