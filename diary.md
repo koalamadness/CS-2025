@@ -5,10 +5,16 @@
 -POM.XML
 ![image](https://github.com/user-attachments/assets/dca5308a-9d7b-411b-8f73-46d6d2410c32)
 ![image](https://github.com/user-attachments/assets/d8c871d8-6c03-4c6f-a800-715a2c95732e)
+![image](https://github.com/user-attachments/assets/06a0da1b-92bc-49b3-b07e-66d55778824b)
+
 + What is equals
 + What is hash
 + RequestMapping vs GetMapping
-+ ![image](https://github.com/user-attachments/assets/ca2fb53e-505f-47be-aace-93df2d1165be)
+![image](https://github.com/user-attachments/assets/ca2fb53e-505f-47be-aace-93df2d1165be)
+![image](https://github.com/user-attachments/assets/1cd8da36-aac1-4e3d-9392-a36459e8c1db)
+![image](https://github.com/user-attachments/assets/6d165556-3f53-43c9-9c01-0653ef748ded)
+![image](https://github.com/user-attachments/assets/29b65ffb-dc55-4047-9bbf-f93eac9b6b80)
+![image](https://github.com/user-attachments/assets/abf208f9-d528-46e5-80de-f32f758c7ec3)
 
 ## 2025/06/20
 ###Java
