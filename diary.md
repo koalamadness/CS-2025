@@ -2,7 +2,12 @@
 
 ## 2025/06/25
 + Set up PostGreSQL in Docker
-
+![image](https://github.com/user-attachments/assets/ec844537-ca9e-4082-9498-37c7d3d856fa)
+![image](https://github.com/user-attachments/assets/5cd16b01-9333-4599-9439-f2178ed61599)
+![image](https://github.com/user-attachments/assets/07155c71-41b8-4df9-8d3b-2c410b64e985)
+![image](https://github.com/user-attachments/assets/4a26d664-644b-467c-9837-216f2cf05c1a)
+![image](https://github.com/user-attachments/assets/edaeb40c-5acb-42ba-8a3a-41b8192b83b8)
+![image](https://github.com/user-attachments/assets/b931b3b0-015b-4802-b8f8-a97045954e28)
 
 ## 2025/06/24
 ###Java
