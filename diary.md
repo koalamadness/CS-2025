@@ -1,5 +1,7 @@
 # Computer Science 
 
+## 2025/06/27
++JPA
 ## 2025/06/26
 + Docker @ PostGreSQL in POM.XML
 ![image](https://github.com/user-attachments/assets/fa90d0c9-723d-4394-b8b2-0a935963b06e)
