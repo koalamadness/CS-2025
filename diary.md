@@ -2,6 +2,8 @@
 
 ## 2025/06/26
 + Docker @ PostGreSQL in POM.XML
+![image](https://github.com/user-attachments/assets/fa90d0c9-723d-4394-b8b2-0a935963b06e)
+![image](https://github.com/user-attachments/assets/940e7fc6-d5ab-457b-a5ce-9a412dafc3c9)
 
 ## 2025/06/25
 + Set up PostGreSQL in Docker
