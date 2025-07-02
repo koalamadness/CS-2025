@@ -1,4 +1,10 @@
 # Computer Science 
+
+## 2025/07/02
+![image](https://github.com/user-attachments/assets/02dbf92d-d657-4703-8d7d-024d76998f5d)
+![image](https://github.com/user-attachments/assets/d2678ac6-ede8-460a-9511-3db28fe06cf8)
+![image](https://github.com/user-attachments/assets/690e5eba-bc81-40a1-8f59-ac7c35286277)
+
 ## 2025/07/01
 +Recovering
 ![image](https://github.com/user-attachments/assets/dd60d5a3-7913-4a3f-9385-729e60dfe7a7)
