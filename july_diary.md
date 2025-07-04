@@ -1,5 +1,6 @@
 # Computer Science 
-
+## 2025/07/03
++Katakana
 ## 2025/07/02
 ![image](https://github.com/user-attachments/assets/02dbf92d-d657-4703-8d7d-024d76998f5d)
 ![image](https://github.com/user-attachments/assets/d2678ac6-ede8-460a-9511-3db28fe06cf8)
