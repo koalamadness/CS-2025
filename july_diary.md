@@ -1,4 +1,6 @@
 # Computer Science 
+## 2025/07/04
++Korean
 ## 2025/07/03
 +Katakana
 ## 2025/07/02
