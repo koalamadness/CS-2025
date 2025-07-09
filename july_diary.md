@@ -1,6 +1,13 @@
 # Computer Science 
 ## 2025/07/09
 + Simple Mapping Reposiroty, Service, Controller;
+  ![image](https://github.com/user-attachments/assets/a9927b68-c510-414e-85ad-d47b8a95776e)
+![image](https://github.com/user-attachments/assets/2a4dca17-3a62-4c51-94bd-9ac446766747)
+![image](https://github.com/user-attachments/assets/5d033e1e-4a84-4391-92b8-0b7558174a63)
+![image](https://github.com/user-attachments/assets/1cc153ad-3967-45ab-ae84-2be26ef997c4)
+![image](https://github.com/user-attachments/assets/2333d5cf-5c28-461c-8865-473f2c120511)
+![image](https://github.com/user-attachments/assets/b422d1ec-a978-4c43-bac0-77780451437f)
+
 ## 2025/07/08
 + .mdb
 ## 2025/07/07
