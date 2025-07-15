@@ -1,4 +1,12 @@
 # Computer Science 
+## 2025/07/15
+<img width="806" height="520" alt="image" src="https://github.com/user-attachments/assets/11fc2e87-5f13-4a6e-bb63-153a38261521" />
+<img width="803" height="554" alt="image" src="https://github.com/user-attachments/assets/f0aa9a4f-9187-44ad-995c-ab931700a7ef" />
+<img width="794" height="286" alt="image" src="https://github.com/user-attachments/assets/f733cb6c-6fa0-4be3-9a66-1e5257493053" />
+<img width="797" height="395" alt="image" src="https://github.com/user-attachments/assets/d255f953-00dc-4174-9795-06025bb319ca" />
+<img width="364" height="229" alt="image" src="https://github.com/user-attachments/assets/f06bac21-35ed-417c-818a-cf653775d804" />
+<img width="490" height="240" alt="image" src="https://github.com/user-attachments/assets/4e39aeca-9809-4697-88ad-1a0b2b2fcf0b" />
+
 ## 2025/07/11
 + MDB set up
 ## 2025/07/10
