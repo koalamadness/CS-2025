@@ -1,4 +1,7 @@
 # Computer Science 
+## 2025/08/13
++ Java
+- PacMan Completed
 ## 2025/08/12
 + Java
 - PacMan
