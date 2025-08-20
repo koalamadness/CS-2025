@@ -1,7 +1,7 @@
 # Computer Science 
-## 2025/08/18
+## 2025/08/19
 + Java
-- PacMan Movement
+- Ghost Movement ANDO MALITO
 ## 2025/08/18
 + Java
 - New Map
