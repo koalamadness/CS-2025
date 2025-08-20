@@ -1,7 +1,8 @@
 # Computer Science 
 ## 2025/08/19
 + Java
-- Ghost Movement ANDO MALITO
+- Ghost Movement ANDO MALITO PERO SE LOGRO
+- Downwards
 ## 2025/08/18
 + Java
 - New Map
