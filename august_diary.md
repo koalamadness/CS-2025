@@ -1,4 +1,7 @@
 # Computer Science 
+## 2025/08/20
++ Java
+-  ANDO MALITO PERO SE LOGRO
 ## 2025/08/19
 + Java
 - Ghost Movement ANDO MALITO PERO SE LOGRO
