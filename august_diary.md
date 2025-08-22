@@ -1,4 +1,6 @@
 # Computer Science 
+## 2025/08/21
++Learning
 ## 2025/08/20
 + Java
 -  ANDO MALITO PERO SE LOGRO
