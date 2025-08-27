@@ -1,4 +1,7 @@
 # Computer Science 
+## 2025/08/26
++ JS
+- Doodle Jump completed
 ## 2025/08/25
 + JS
 - Doodle Jump canvas set up, initial movements 
