@@ -1,6 +1,9 @@
 # Computer Science 
 ## 2025/08/28
 * Java
+- SOLID / Microservice 
+## 2025/08/28
+* Java
 * Rest API
 ## 2025/08/27
 * Java
