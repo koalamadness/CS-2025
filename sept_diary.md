@@ -1,4 +1,7 @@
 # Computer Science 
+## 2025/09/09
+*Python 
+- Hash
 ## 2025/09/08
 *Python 
 - Queue Implementation
