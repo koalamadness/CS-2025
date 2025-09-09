@@ -1,4 +1,7 @@
 # Computer Science 
+## 2025/09/08
+*Python 
+- Queue Implementation
 ## 2025/09/05
 *Java 
 -Enum
