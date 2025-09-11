@@ -1,4 +1,18 @@
-# Computer Science 
+# Computer Science
+## 2025/09/10
+*Python  
+num = 7
+
+for i in range(num):
+
+   
+    column = num
+    if(i is 1):
+        print(f"{" " * (column-1)}*") 
+    else:
+        column -= i
+        print(f"{" " * column}{"*" * (2*i - 1)}")
+
 ## 2025/09/09
 *Python 
 - Hash
