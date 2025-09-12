@@ -1,4 +1,18 @@
 # Computer Science
+## 2025/09/12
+for i in range(num):
+    if(i is 0):
+        continue
+    column = num
+    if(i is 1):
+        print(f"{" " * (column-1)}*") 
+    elif(i==(num-1)):
+        column -= i
+        print(f"{" " * column}{"*" * (2*i - 1)}")
+    else:
+        column -= i
+        print(f"{" " * column}{"*"}{" " * ((2*i)-3)}{"*"}")
+
 ## 2025/09/11
 num=9
 
