@@ -1,4 +1,31 @@
 # Computer Science
+## 2025/09/11
+num=9
+
+column = math.ceil(num/2)
+
+stars = []
+
+for i in range(num +1 ):
+    
+    if(i is 0):
+        continue
+    if(i is 1):
+        print(f"{" " * ((column))}*") 
+        stars.append(i)
+    elif(i is (math.ceil(num/2))):
+        column -= 1
+        print(f"{" " * (column)}{"*" * (2*i - 1)}")
+    elif(i > (math.ceil(num/2))):   
+        column += 1
+        star_num = stars.pop()
+        print(f"{" " * column}{"*" * (star_num)}")
+    
+    else:
+        column -= 1
+        print(f"{" " * column}{"*" * (2*i - 1)}")
+        stars.append(2*i - 1)
+
 ## 2025/09/10
 *Python  
 num = 7
