@@ -1,4 +1,21 @@
 # Computer Science
+## 2025/09/18
+        
+    def lengthOfLastWord(self, s: str) -> int:
+        str_length = len(s)-1
+        i = str_length
+        letter_count = 0
+        seen_word = False
+        while(i > 0):
+            
+            if(s[i] == " "):
+                if seen_word:
+                    return letter_count
+            else:
+                letter_count += 1
+                seen_word = True
+            i -= 1
+        return letter_count
 
 ## 2025/09/17
 class Solution:
