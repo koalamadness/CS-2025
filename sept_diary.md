@@ -41,6 +41,29 @@ class Solution:
         print(result)
         return result
 
+        def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+
+        letter_dict = {}
+        
+        if(len(ransomNote) > len(magazine)):
+            return False
+        
+        for letter in magazine:
+            if letter not in letter_dict:
+                letter_dict[letter] = 1
+            else:
+                letter_dict[letter] += 1
+
+        for letter in ransomNote:
+            if letter not in letter_dict:
+                return False
+            else:
+                if(letter_dict[letter] == 0):
+                    return False
+                letter_dict[letter] -= 1
+
+        return True
+
 ## 2025/09/12
 for i in range(num):
     if(i is 0):
