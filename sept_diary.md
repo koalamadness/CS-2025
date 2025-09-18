@@ -25,6 +25,22 @@ class Solution:
         print(merged_string)
         return merged_string
 
+        class Solution:
+    def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
+        
+        max_candy = max(candies)
+
+        result = []
+
+        for candy in candies:
+            if ((candy + extraCandies) >= max_candy):
+                result.append(True)
+            else:
+                result.append(False)
+    
+        print(result)
+        return result
+
 ## 2025/09/12
 for i in range(num):
     if(i is 0):
