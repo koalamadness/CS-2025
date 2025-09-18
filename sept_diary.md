@@ -1,4 +1,30 @@
 # Computer Science
+
+## 2025/09/13
+class Solution:
+    def mergeAlternately(self, word1: str, word2: str) -> str:
+
+        merged_string = ""
+
+        i1 = 0
+        i2 = 0
+
+        while(i1 < len(word1) and i2 < len(word2)):
+
+            merged_string += word1[i1]
+            merged_string += word2[i2]
+            
+            i1 += 1
+            i2 += 1
+
+        if(len(word1)>len(word2)):
+            merged_string += word1[i1:]
+        else:
+            merged_string += word2[i2:]
+        
+        print(merged_string)
+        return merged_string
+
 ## 2025/09/12
 for i in range(num):
     if(i is 0):
