@@ -1,4 +1,73 @@
 # Computer Science
+## 2025/09/19
+        
+def strStr(haystack: str, needle: str) -> int:
+    
+    i_needle = 1
+    current_first_index = 0
+    
+    on_track_list = []
+
+    on_track = False
+    
+    needle_compare = needle[:len(needle) - len(needle) + i_needle]
+    
+    print(needle_compare)
+    string_compare = ""
+
+    ## i < len(haystack) i += 1
+
+    i = 0
+    while (i < len(haystack)):
+        if haystack[i] == needle:
+            current_first_index = i
+            return current_first_index 
+        
+        # first char
+        if haystack[i] == needle_compare:
+            current_first_index = i
+            string_compare += haystack[i]
+            i_needle += 1
+            #update needle_compare
+            needle_compare = needle[:len(needle) - len(needle) + i_needle]
+
+            on_track = True
+            i += 1
+            continue
+            
+        if on_track:
+
+            if(haystack[i] == needle[0]):
+                on_track_list.append(i)
+
+            string_compare += haystack[i]
+
+            print(string_compare, needle_compare, "ontrack")
+            if string_compare == needle:
+                return current_first_index
+     
+            if string_compare == needle_compare:
+                i_needle += 1
+                needle_compare = needle[:len(needle) - len(needle) + i_needle]
+                i += 1
+                continue
+            else:
+                on_track = False
+                current_first_index = 0
+                i_needle = 1
+                needle_compare = needle[:len(needle) - len(needle) + i_needle]
+                string_compare = ""
+                #i += 1
+                print("wronggtun")
+            #turns False 
+
+
+        i += 1
+
+        #check
+        if len(on_track_list) >= 1:
+         i = on_track_list.pop(0)
+    return -1 
 ## 2025/09/18
         
     def lengthOfLastWord(self, s: str) -> int:
