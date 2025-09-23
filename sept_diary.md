@@ -1,4 +1,74 @@
 # Computer Science
+
+## 2025/09/22
+
+import math
+
+#self
+def isHappy(n: int) -> bool:
+    
+    n_digits = len(str(n))
+
+    if n_digits == 1:
+        if n== 1:
+            return True
+    
+    i = n_digits
+    
+    i_string = 0
+
+    sum = 0
+
+    divider = ''
+
+    digit = 0
+    try:
+        while(i > 0):
+
+           
+            n = int(str(n)[i_string:])
+            
+            divider = '1' + (i-1)*'0'
+            print(divider)
+
+            digit = math.floor(n /int(divider))
+            print(digit)
+
+            sum += (digit * digit)
+
+            i_string += 1
+            i -= 1
+            
+            #fix sum == 1
+
+            if sum == 1 and len(str(n)) == 1:
+                return True
+            
+            if i == 0:
+           
+                n = sum
+                
+                n_digits = len(str(n))
+
+                i = n_digits
+                    
+                i_string = 0
+                
+                sum = 0
+
+                divider = ''
+
+                digit = 0
+                #fix i:string, divider, digit etc 
+
+    except MemoryError:
+        return False
+
+    print(sum)
+    return False
+    # try catch 
+
+print(isHappy(77))
 ## 2025/09/19
         
 def strStr(haystack: str, needle: str) -> int:
