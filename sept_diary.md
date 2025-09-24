@@ -1,4 +1,27 @@
 # Computer Science
+## 2025/09/24
+    def firstUniqChar(self, s: str) -> int:
+            s_set = set(s)
+            min_index = len(s) -1
+
+            has_unique_letter = False
+
+            for letter in s_set:
+                letter_count = s.count(letter)
+
+                if letter_count < 2:
+                    has_unique_letter = True
+
+                    index = s.find(letter)
+                    
+                    if index < min_index:
+                        min_index = index
+            
+
+            if has_unique_letter:
+                return min_index
+            else:
+                return -1
 ## 2025/09/23
 class Solution:
     def wordPattern(self, pattern: str, s: str) -> bool:
