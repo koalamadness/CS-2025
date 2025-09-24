@@ -1,5 +1,33 @@
 # Computer Science
+## 2025/09/23
+class Solution:
+    def wordPattern(self, pattern: str, s: str) -> bool:
+        
+        p_dict = {}
+        s_list = s.split(" ")
 
+        if(len(pattern) != len(s_list)):
+            return False
+
+        for i in range(len(pattern)):
+
+            if(pattern[i] in p_dict.keys()):
+                if p_dict[pattern[i]] != s_list[i]:
+                    return False
+            
+            if(s_list[i] in p_dict.values()):
+                for key, value in p_dict.items():
+                    if p_dict[key] == s_list[i] and key != pattern[i]:
+                        return False 
+                        
+
+            if(pattern[i] in p_dict.keys() and s_list[i] in p_dict.values()):
+                if p_dict[pattern[i]] != s_list[i]:
+                    return False
+            else:
+                p_dict[pattern[i]] = s_list[i]
+                print(p_dict)
+        return True
 ## 2025/09/22
 
 import math
