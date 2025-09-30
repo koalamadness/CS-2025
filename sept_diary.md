@@ -1,4 +1,56 @@
 # Computer Science
+## 2025/09/29
+class Solution1:
+    def isAlienSorted(self, words: List[str], order: str) -> bool:
+    
+        letter_index_dict = {}
+        i = 0
+
+        while i < len(words) -1:
+            print(words[i], words[i+1])
+
+            word_A = words[i]
+            word_B = words[i + 1]
+
+            j = 0
+            k = 0
+            while(j < len(word_A) and k < len(word_B)):
+                
+                letter_A = word_A[j]
+                letter_B = word_B[k] 
+
+                print(letter_A, letter_B)
+
+                indexA = 0
+                indexB = 0
+
+                if letter_A in letter_index_dict:
+                    indexA = letter_index_dict[letter_A]
+                else:
+                    indexA = word_A.find(letter_A)
+                    letter_index_dict[letter_A] = indexA
+
+                if letter_B in letter_index_dict:
+                    indexB = letter_index_dict[letter_B]
+                else:
+                    indexB = word_B.find(letter_B)
+                    letter_index_dict[letter_B] = indexB
+
+                if indexA > indexB:
+                    return False
+
+                j += 1
+                k += 1
+            
+            i += 1
+
+            
+
+        return True
+    
+sol1 = Solution1()
+
+print(sol1.isAlienSorted(["hello","leetcode"], "hlabcdefgijkmnopqrstuvwxyz"))
 ## 2025/09/26
 Chamba
 ## 2025/09/25
