@@ -1,4 +1,42 @@
 # Computer Science
+## 2025/09/30
+class Solution1:
+
+
+    def minDeletionSize(self, strs: List[str]) -> int:
+        columns_to_delete = 0
+
+        str_len = len(strs[0]) - 1
+        list_len = len(strs) - 1
+        i = 0
+        #j = 0
+
+        #previous_letter = strs[0][0]
+
+        while i <= str_len:
+            j = 0
+
+            previous_letter = strs[j][i]
+
+            while j <= list_len:
+                letter = strs[j][i]
+
+                print(f"i:{i} j:{j}",strs[j][i])
+
+                if not previous_letter <= letter:
+                    
+                    j = list_len
+                    print(previous_letter, letter)
+                    columns_to_delete += 1
+                    
+     
+                previous_letter = letter
+                j += 1
+
+            i += 1
+
+        return columns_to_delete
+
 ## 2025/09/29
 class Solution1:
     def isAlienSorted(self, words: List[str], order: str) -> bool:
