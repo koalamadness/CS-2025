@@ -1,5 +1,12 @@
 # Computer Science
 ## 2025/09/30
+class Solution:
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        nums_set = set(nums)
+
+        complete_set = set(list(range(1, len(nums)+ 1 )))
+
+        return list(complete_set - nums_set)
 class Solution1:
 
     def commonChars(self, words: List[str]) -> List[str]:
