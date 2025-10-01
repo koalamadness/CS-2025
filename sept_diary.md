@@ -2,6 +2,28 @@
 ## 2025/09/30
 class Solution1:
 
+    def commonChars(self, words: List[str]) -> List[str]:
+        letter_dict = {}
+        common_letters  = []
+
+        for word in words:
+            for letter in word:
+                if letter not in letter_dict:
+                    letter_dict[letter] = 1
+                else:
+                    letter_dict[letter] += 1
+
+        #print(letter_dict)
+        for key in letter_dict:
+            if letter_dict[key] == len(words) :
+                common_letters.append(key)
+            elif letter_dict[key] % len(words) == 0 and key not in common_letters:
+                for i in range(letter_dict[key] // len(words)):
+                    common_letters.append(key)
+        
+        return common_letters
+class Solution1:
+
 
     def minDeletionSize(self, strs: List[str]) -> int:
         columns_to_delete = 0
