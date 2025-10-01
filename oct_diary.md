@@ -24,3 +24,24 @@ class Solution:
         result_set.update(B_C)
        # print(result_set)
         return list(result_set)
+class Solution:
+    def findPermutationDifference(self, s: str, t: str) -> int:
+        letter_dict = {}
+        permutation_dif = 0
+        for i in range(len(s)):
+            letter_s = s[i]
+            letter_t = t[i]
+
+            if letter_s not in letter_dict:
+                letter_dict[letter_s] = i
+            else:
+                letter_dict[letter_s] = abs(letter_dict[letter_s] - i)
+                permutation_dif += letter_dict[letter_s]
+            
+            if letter_t not in letter_dict:
+                letter_dict[letter_t] = i
+            else:
+                letter_dict[letter_t] = abs(letter_dict[letter_t] - i)
+                permutation_dif += letter_dict[letter_t]
+
+        return permutation_dif
