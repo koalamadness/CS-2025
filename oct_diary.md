@@ -1,5 +1,27 @@
 # Computer Science
 ## 2025/10/01
+    def numDifferentIntegers(self, word: str) -> int:
+        import string
+
+        alphabet = string.ascii_lowercase
+        in_num = False
+        num_set = set()
+        num = ""
+
+        for char in word:
+            if char in alphabet and in_num:
+                num_set.add(int(num))
+                num = ""
+                in_num = False
+            elif char in alphabet:
+                continue
+            elif char not in alphabet:
+                num += char
+                in_num = True
+
+        num_set.add(int(num))
+
+        return len(num_set)
 class Solution:
     def countAsterisks(self, s: str) -> int:
         counter = 0
