@@ -6,3 +6,21 @@ class Solution:
         lowercase_alphabet = set(string.ascii_lowercase)
        
         return lowercase_alphabet- set(sentence) == set()
+class Solution:
+    def twoOutOfThree(self, nums1: List[int], nums2: List[int], nums3: List[int]) -> List[int]:
+        
+        A = set(nums1) 
+        B = set(nums2)
+        C = set(nums3)
+
+        result_set = set()
+
+        A_B = A.intersection(B)
+        A_C = A.intersection(C)
+        B_C = B.intersection(C)
+
+        result_set.update(A_B)
+        result_set.update(A_C)
+        result_set.update(B_C)
+       # print(result_set)
+        return list(result_set)
