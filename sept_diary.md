@@ -1,6 +1,18 @@
 # Computer Science
 ## 2025/09/30
 class Solution:
+    def sumOfUnique(self, nums: List[int]) -> int:
+        nums_dict = {}
+        sum = 0
+        for num in nums:
+            if num not in nums_dict:
+                nums_dict[num] = 1
+                sum += num
+            elif nums_dict[num] == 1:
+                  nums_dict[num] += 1
+                  sum -= num
+        return sum 
+class Solution:
     def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
         nums_set = set(nums)
 
