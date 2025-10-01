@@ -1,6 +1,21 @@
 # Computer Science
 ## 2025/10/01
 class Solution:
+    def countAsterisks(self, s: str) -> int:
+        counter = 0
+        inside_bars = False
+
+        for i in s:
+            if i == '|':
+                inside_bars = not inside_bars
+
+            if i == '*' and not inside_bars:
+                counter += 1
+        
+        return counter
+
+
+class Solution:
     import string
     def checkIfPangram(self, sentence: str) -> bool:
         lowercase_alphabet = set(string.ascii_lowercase)
