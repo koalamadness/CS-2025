@@ -1,6 +1,24 @@
 # Computer Science
 ## 2025/10/02
 class Solution:
+    def countWords(self, words1: List[str], words2: List[str]) -> int:
+        
+        words1_set = set(words1)
+        words2_set = set(words2)
+
+        count = 0
+
+        intersection1_2 = words1_set.intersection(words2_set)
+
+        for word in intersection1_2:
+            count1 = words1.count(word)
+            count2 = words2.count(word)
+
+            if count1 == 1 and count2 == 1:
+                count += 1
+
+        return count        
+class Solution:
     def checkString(self, s: str) -> bool:
         #seen_a = False
         seen_b = False
