@@ -1,6 +1,29 @@
 # Computer Science
 ## 2025/10/02
 class Solution:
+    def divideString(self, s: str, k: int, fill: str) -> List[str]:
+        
+        result_list = []
+        m = k
+        i = 0
+
+        while k <= len(s):
+
+            block = s[i:k]
+            result_list.append(block)
+
+            i = k 
+
+            k += m
+
+        if i < len(s):
+            block = s[i:]
+            to_fill = (m - len(block)) * fill 
+            block += to_fill
+            result_list.append(block)
+    
+        return result_list
+class Solution:
     def processStr(self, s: str) -> str:
         result = ""   
 
