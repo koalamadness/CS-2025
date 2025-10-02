@@ -1,6 +1,17 @@
 # Computer Science
 ## 2025/10/02
 class Solution:
+    def removeStars(self, s: str) -> str:
+        stack = []
+
+        for i in s:
+            if i == "*":
+                stack.pop()
+            else:
+                stack.append(i)
+        
+        return "".join(stack)
+class Solution:
     def checkAlmostEquivalent(self, word1: str, word2: str) -> bool:
         letter_dict = {}
         for i in range(len(word1)):
