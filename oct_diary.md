@@ -1,6 +1,18 @@
 # Computer Science
 ## 2025/10/02
 class Solution:
+    def checkString(self, s: str) -> bool:
+        #seen_a = False
+        seen_b = False
+
+        for i in s:
+            if i == "a" and seen_b:
+                return False
+            elif i == "b":
+                seen_b = True
+
+        return True
+class Solution:
     def divideString(self, s: str, k: int, fill: str) -> List[str]:
         
         result_list = []
