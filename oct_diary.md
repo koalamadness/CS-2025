@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/10/02
 class Solution:
+    def processStr(self, s: str) -> str:
+        result = ""   
+
+        for i in s:
+            if i == "*":
+                if len(result) > 0:
+                    result = result[:len(result) - 1]
+            elif i == "#":
+                result += result
+            elif i == "%":
+                result = result[::-1]
+            else:
+                result += i
+
+        return result
+            
+class Solution:
     def numJewelsInStones(self, jewels: str, stones: str) -> int:
         jewel_set = set(jewels)
         jewel_count = 0
