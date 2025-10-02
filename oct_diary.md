@@ -1,6 +1,28 @@
 # Computer Science
 ## 2025/10/02
 class Solution:
+    def checkAlmostEquivalent(self, word1: str, word2: str) -> bool:
+        letter_dict = {}
+        for i in range(len(word1)):
+            letter_1 = word1[i]
+            letter_2 = word2[i]
+             
+            if letter_1 not in letter_dict:
+                letter_dict[letter_1] = 1
+            else:
+                letter_dict[letter_1] += 1
+            
+            if letter_2 not in letter_dict:
+                letter_dict[letter_2] = -1
+            else:
+                letter_dict[letter_2] -= 1
+
+        print(letter_dict)
+        for key in letter_dict:
+            if abs(letter_dict[key]) > 3:
+                return False
+        return True 
+class Solution:
     def countWords(self, words1: List[str], words2: List[str]) -> int:
         
         words1_set = set(words1)
