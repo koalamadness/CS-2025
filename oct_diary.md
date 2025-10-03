@@ -1,6 +1,21 @@
 # Computer Science
 ## 2025/10/03
 class Solution:
+    def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+            set1 = set(nums1) 
+            set2 = set(nums2)
+    
+            set3 = set1.intersection(set2)
+             
+            l3 = list(set3)
+            
+            l3.sort()
+            
+            if len(l3) < 1:
+               return -1
+    
+            return l3[0]
+class Solution:
     def areOccurrencesEqual(self, s: str) -> bool:
         letter_dict = {}
         frequency = 1
