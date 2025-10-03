@@ -1,6 +1,38 @@
 # Computer Science
 ## 2025/10/03
 class Solution:
+    def timeRequiredToBuy(self, tickets: List[int], k: int) -> int:
+        follow = k
+        k = tickets[k]
+        seconds = 0
+       
+        # check 
+        while k > 0 and len(tickets) > 0:
+            #print(tickets, seconds)
+            if len(tickets) > 0:
+                front_line = tickets.pop(0)
+               # print(f"frontiline: {front_line}")
+    
+                follow -= 1
+              #  print(tickets[follow])
+                if(follow < 0):
+                  
+                    k -= 1
+                    print(k)
+
+                #ticket bought
+                front_line -= 1
+                seconds += 1
+                
+                if(k == 0):
+                    return seconds
+
+                # if 0 leave line
+                if front_line > 0:
+                    tickets.append(front_line)
+                    if(follow < 0):
+                        follow = len(tickets) - 1
+class Solution:
     def backspaceCompare(self, s: str, t: str) -> bool:
         stack1 = []
         stack2 = []
