@@ -1,4 +1,23 @@
 # Computer Science
+## 2025/10/03
+class Solution:
+    def areOccurrencesEqual(self, s: str) -> bool:
+        letter_dict = {}
+        frequency = 1
+        
+        for letter in s:
+            if letter not in letter_dict:
+                letter_dict[letter] = 1
+            else:
+                letter_dict[letter] += 1
+        
+        frequency = letter_dict[letter] 
+        
+        for value in letter_dict.values():
+            if value != frequency:
+                return False
+                
+        return True
 ## 2025/10/02
 class Solution:
     def removeStars(self, s: str) -> str:
