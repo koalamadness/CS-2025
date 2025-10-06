@@ -1,4 +1,28 @@
 # Computer Science
+## 2025/10/04
+class Solution:
+    def mergeSimilarItems(self, items1: List[List[int]], items2: List[List[int]]) -> List[List[int]]:
+        num_dict = {}
+        num_list = []
+        for element1 in items1:
+            if element1[0] not in num_dict:
+                num_dict[element1[0]] = element1[1]
+            else:
+                num_dict[element1[0]] += element1[1]
+        
+        for element2 in items2:
+            if element2[0] not in num_dict:
+                num_dict[element2[0]] = element2[1]
+            else:
+                num_dict[element2[0]] += element2[1]
+
+        for key in num_dict:
+            element = [key, num_dict[key]]
+            num_list.append(element)
+        
+        num_list.sort()
+        
+        return num_list
 ## 2025/10/03
 class Solution:
     def timeRequiredToBuy(self, tickets: List[int], k: int) -> int:
