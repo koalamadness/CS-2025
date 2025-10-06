@@ -1,6 +1,24 @@
 # Computer Science
 ## 2025/10/04
 class Solution:
+    def uniqueOccurrences(self, arr: List[int]) -> bool:
+        num_dict = {}
+        ocurrences = []
+
+        for num in arr:
+            if num not in num_dict:
+                num_dict[num] = 1
+            else:
+                num_dict[num] += 1
+
+        for key in num_dict:
+            if num_dict[key] not in ocurrences:
+                ocurrences.append(num_dict[key])
+            else:
+                return False
+
+        return True
+class Solution:
     def mergeSimilarItems(self, items1: List[List[int]], items2: List[List[int]]) -> List[List[int]]:
         num_dict = {}
         num_list = []
