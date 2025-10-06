@@ -1,5 +1,18 @@
 # Computer Science
 ## 2025/10/04
+class Solution:
+    def repeatedCharacter(self, s: str) -> str:
+        letter_dict = {}
+        for letter in s:
+            if letter not in letter_dict:
+                letter_dict[letter] = 1
+            else:
+                letter_dict[letter] += 1
+            
+            if letter_dict[letter] == 2:
+                return letter
+        
+        
 class ParkingSystem:
 
     def __init__(self, big: int, medium: int, small: int):
