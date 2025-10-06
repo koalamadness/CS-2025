@@ -1,6 +1,19 @@
 # Computer Science
 ## 2025/10/04
 class Solution:
+    def clearDigits(self, s: str) -> str:
+        stack = []
+
+        nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+
+        for i in s:
+            if i not in nums:
+                stack.append(i)
+            else:
+                stack.pop()
+
+        return "".join(stack)
+class Solution:
     def repeatedCharacter(self, s: str) -> str:
         letter_dict = {}
         for letter in s:
