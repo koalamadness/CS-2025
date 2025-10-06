@@ -1,6 +1,15 @@
 # Computer Science
 ## 2025/10/04
 class Solution:
+    def firstMissingPositive(self, nums: List[int]) -> int:
+        counter = 1
+        nums.sort()
+        for num in nums:
+            if num == counter:
+                counter += 1  
+                
+        return counter 
+class Solution:
     def uniqueOccurrences(self, arr: List[int]) -> bool:
         num_dict = {}
         ocurrences = []
