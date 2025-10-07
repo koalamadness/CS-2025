@@ -1,6 +1,19 @@
 # Computer Science
 ## 2025/10/07
 class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        result = []
+        num_dict = {}
+        for i in range(len(nums)):
+            x = target - nums[i]
+            if x in num_dict:
+                result.append(num_dict[x])
+                result.append(i)
+
+                return result
+            else:
+                num_dict[nums[i]] = i 
+class Solution:
     def sum(self, num1: int, num2: int) -> int:
         return num1 + num2
 class Solution:
