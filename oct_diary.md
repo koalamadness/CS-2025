@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/10/04
 class Solution:
+    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
+        result = []
+
+        A = set(nums1)
+        B = set(nums2)
+
+        A2 = A
+        A = A - B
+
+        B = B - A2
+
+        result.append(list(A))
+
+        result.append(list(B))
+
+        return result
+class Solution:
     def calPoints(self, operations: List[str]) -> int:
         record = []
 
