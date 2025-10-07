@@ -1,6 +1,9 @@
 # Computer Science
 ## 2025/10/07
 class Solution:
+    def sum(self, num1: int, num2: int) -> int:
+        return num1 + num2
+class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         result = []
         for i in range(1, n+1):
