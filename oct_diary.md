@@ -1,5 +1,24 @@
 # Computer Science
-## 2025/10/08
+## 2025/10/0
+class Solution:
+    def reverseString(self, s: List[str]) -> None:
+        i = 0
+        j = len(s) - 1
+
+
+        while(i != j and  j > i):
+            l1 = s[i]
+            fill = ""
+            l2 = s[j]
+
+            fill = l1
+            s[i] = l2
+            s[j] = fill
+
+            i += 1
+            j -= 1
+
+        return s
 class Solution:
     def sumZero(self, n: int) -> List[int]:
         result = []
