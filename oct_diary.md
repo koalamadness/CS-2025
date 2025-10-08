@@ -1,4 +1,27 @@
 # Computer Science
+## 2025/10/08
+class Solution:
+    def sumZero(self, n: int) -> List[int]:
+        result = []
+        if n % 2 != 0:
+            m = (n / 2) - 0.5
+            
+            m = -m
+            m = int(m)
+            for i in range(int(n)):
+                result.append(m)
+                m += 1
+        else:
+            m = -(n / 2) 
+
+            for i in range(n):
+                result.append(m)
+
+                if(i + 1 == n/2):
+                    m += 2
+                else:
+                    m += 1  
+        return result
 ## 2025/10/07
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
