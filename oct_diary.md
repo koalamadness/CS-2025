@@ -1,6 +1,28 @@
 # Computer Science
 ## 2025/10/07
 class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        letter_dict = {}
+
+        if len(s) != len(t):
+            return False
+
+        for i in s:
+            if i not in letter_dict:
+                letter_dict[i] = 1
+            else:
+                letter_dict[i] += 1
+
+        for j in t:
+            if j in letter_dict:
+                letter_dict[j] -= 1
+
+                if letter_dict[j] == 0:
+                    del letter_dict[j]
+
+        
+        return letter_dict == {}
+class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         result = []
         num_dict = {}
