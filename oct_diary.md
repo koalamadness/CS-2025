@@ -1,6 +1,21 @@
 # Computer Science
 ## 2025/10/0
 class Solution:
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        i = 0
+        j = 0
+        if i < (len(s) - 1):
+            letters = s[i]
+
+            for letter in t:
+                if letter == letters:
+                    i += 1
+                    if i < (len(s) - 1):
+                        letters = s[i]
+        if s == "":
+            return True
+        return i == (len(s) - 1) 
     def reverseString(self, s: List[str]) -> None:
         i = 0
         j = len(s) - 1
