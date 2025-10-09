@@ -1,6 +1,21 @@
 # Computer Science
 ## 2025/10/09
 class Solution:
+    def findMaxAverage(self, nums: List[int], k: int) -> float:
+        n = len(nums)
+
+        window_avg = sum(nums[:k]) / k
+        window_sum = sum(nums[:k])
+        max_avg = window_avg
+
+        for i in range(n - k):
+            window_sum = window_sum - nums[i] + nums[i+k]
+            avg = window_sum/k
+
+            max_avg = max(max_avg, avg)
+
+        return max_avg
+class Solution:
     def runningSum(self, nums: List[int]) -> List[int]:
         n = len(nums)
 
