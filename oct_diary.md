@@ -1,5 +1,6 @@
 # Computer Science
-## 2025/10/0
+## 2025/10/09
+## 2025/10/08
 class Solution:
 class Solution:
     def isSubsequence(self, s: str, t: str) -> bool:
