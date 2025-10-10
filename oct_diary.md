@@ -1,4 +1,12 @@
 # Computer Science
+## 2025/10/10
+class Solution:
+    def sumOfMultiples(self, n: int) -> int:
+        lst = []
+        for num in range(1, n + 1):
+            if num % 3 == 0 or num % 5 == 0 or num % 7 == 0:
+                lst.append(num)
+        return sum(lst)
 ## 2025/10/09
 class Solution:
     def findMaxAverage(self, nums: List[int], k: int) -> float:
