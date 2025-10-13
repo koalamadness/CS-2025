@@ -1,4 +1,28 @@
 # Computer Science
+## 2025/10/13
+class Solution:
+    def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
+        result = []
+        A = s1.split()
+        B = s2.split()
+
+        s1 = s1.split()
+        s2 = s2.split()
+        
+        A = set(A)
+        B = set(B)
+
+        C = A.union(B) - A.intersection(B)
+
+        for word in C:
+         
+            count1 = s1.count(word)
+            count2 = s2.count(word)
+
+            if count1 == 1 or count2 == 1:
+                result.append(word)
+
+        return result
 ## 2025/10/10
 class Solution:
     def sumOfMultiples(self, n: int) -> int:
