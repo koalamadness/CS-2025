@@ -1,5 +1,35 @@
 # Computer Science
 ## 2025/10/13
+import math
+
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        counter = 0
+        total = 0
+        curr = head
+
+        while curr is not None:
+            counter += 1
+
+            curr = curr.next
+
+        total = counter 
+        curr = head
+
+        if total % 2 == 0:
+            medium = (total / 2) + 1
+        else:
+            medium = math.ceil(total / 2)
+
+        counter = 0
+        curr = head
+
+            
+        while curr is not None:
+            counter += 1
+            if counter == medium:
+                return curr
+            curr = curr.next
 class Solution:
     def kthDistinct(self, arr: list[str], k: int) -> str:
         count = 0
