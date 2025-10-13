@@ -1,6 +1,21 @@
 # Computer Science
 ## 2025/10/13
 class Solution:
+    def maxDepth(self, s: str) -> int:
+        stack = []
+        max_len = len(stack)
+
+        for i in s:
+            if i == "(":
+                stack.append(i)
+                if len(stack) > max_len:
+                    max_len = len(stack)
+            elif i == ")":
+                stack.pop()
+
+        return max_len
+
+class Solution:
     def uncommonFromSentences(self, s1: str, s2: str) -> List[str]:
         result = []
         A = s1.split()
