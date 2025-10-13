@@ -1,6 +1,20 @@
 # Computer Science
 ## 2025/10/13
 class Solution:
+    def areNumbersAscending(self, s: str) -> bool:
+        last_number = 0
+        res = ascii_lowercase
+        s = s.split()
+
+        for i in s:
+            if i.isnumeric():
+                number = int(i)
+                if number < last_number or number == last_number:
+                    return False
+                last_number = number     
+
+        return True
+class Solution:
     def maxDepth(self, s: str) -> int:
         stack = []
         max_len = len(stack)
