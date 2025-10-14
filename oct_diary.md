@@ -1,5 +1,19 @@
 # Computer Science
 ## 2025/10/13
+class Solution:
+    def numIdenticalPairs(self, nums: List[int]) -> int:
+        num_dict = {}
+        counter = 0
+        for i in range(len(nums)):
+            if nums[i] in num_dict:
+                for j in num_dict[nums[i]]:
+                    if i > j:
+                        counter += 1
+                num_dict[nums[i]].append(i)
+            else:
+                num_dict[nums[i]] = [i]
+        
+        return counter
 import math
 
 class Solution:
