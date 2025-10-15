@@ -1,6 +1,18 @@
 # Computer Science
 ## 2025/10/14
+class Solution:
+    def findDuplicates(self, nums: List[int]) -> List[int]:
+        num_dict = {}
+        result = []
+        for num in nums:
+            if num not in num_dict:
+                num_dict[num] = 1
+            else:
+                num_dict[num] += 1
+                if num_dict[num] == 2 and num not in result:
+                    result.append(num) 
 
+        return result
 ## 2025/10/13
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
