@@ -1,4 +1,6 @@
 # Computer Science
+## 2025/10/14
+
 ## 2025/10/13
 class Solution:
     def numIdenticalPairs(self, nums: List[int]) -> int:
