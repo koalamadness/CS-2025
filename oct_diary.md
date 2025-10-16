@@ -1,6 +1,28 @@
 # Computer Science
 ## 2025/10/15
 class Solution:
+    def hardestWorker(self, n: int, logs: List[List[int]]) -> int:
+        min_id = 0
+        longest_time = 0
+        start_time = 0
+
+        for log in logs:
+            end_time = log[1]
+            time = end_time - start_time
+
+            if time > longest_time:
+                longest_time = time
+                min_id = log[0]
+
+            if time == longest_time and log[0] < min_id:
+                min_id = log[0]
+
+            start_time = end_time
+
+
+        return min_id
+
+class Solution:
     def addedInteger(self, nums1: List[int], nums2: List[int]) -> int:
         nums1.sort()
         nums2.sort()
