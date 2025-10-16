@@ -1,4 +1,11 @@
 # Computer Science
+## 2025/10/16
+
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if root is None:
+            return []
+        return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
 ## 2025/10/15
 
 class Solution:
