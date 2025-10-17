@@ -1,4 +1,14 @@
 # Computer Science
+## 2025/10/17
+class Solution:
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        if root is None:
+            return 0
+
+        if root.val >= low and root.val <= high:
+            return self.rangeSumBST(root.left, low, high) + root.val + self.rangeSumBST(root.right, low, high)
+        else:
+            return self.rangeSumBST(root.left, low, high) + 0 + self.rangeSumBST(root.right, low, high)
 ## 2025/10/16
 
 class Solution:
