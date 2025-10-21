@@ -1,6 +1,12 @@
 # Computer Science
 ## 2025/10/20
 class Solution:
+    def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if root is None:
+            return []
+
+        return self.postorderTraversal(root.left) + self.postorderTraversal(root.right) + [root.val]
+class Solution:
     def preorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         if root is None:
             return []
