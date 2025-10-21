@@ -1,6 +1,33 @@
 # Computer Science
 ## 2025/10/20
 class Solution:
+    def findMode(self, root: Optional[TreeNode]) -> List[int]:
+        nums_dict = {}
+        mode_num = 0
+        result = []
+        def dfs(root, nd):
+            if root:
+                dfs(root.left, nd)
+                if root.val not in nd:
+                    nd[root.val] = 1
+                else:
+                    nd[root.val] += 1
+                dfs(root.right, nd)
+            
+            return nd 
+
+        nums_dict = dfs(root, nums_dict)
+        #print(nums_dict)
+        for key in nums_dict:
+            if nums_dict[key] > mode_num:
+                mode_num = nums_dict[key]
+
+        for key in nums_dict:
+            if nums_dict[key] == mode_num:
+                result.append(key)
+
+        return result
+class Solution:
     def postorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
         if root is None:
             return []
