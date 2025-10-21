@@ -1,5 +1,14 @@
 # Computer Science
 ## 2025/10/21
+    def reversePrefix(self, word: str, ch: str) -> str:
+        for i in range(len(word)):
+            if word[i] == ch:
+                 Invertir el prefijo hasta el índice i (incluido)
+                prefix = word[:i+1][::-1]
+                return prefix + word[i+1:]
+         Si no se encuentra ch, regresar la palabra original
+        return word
+
 class Solution:
     def isPalindrome(self, s: str) -> bool:
         a = 0
