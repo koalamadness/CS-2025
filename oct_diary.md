@@ -1,6 +1,26 @@
 # Computer Science
 ## 2025/10/21
 class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        a = 0
+        b = len(s) - 1
+
+        while a < b:
+             Ignorar caracteres no alfanuméricos
+            while a < b and not s[a].isalnum():
+                a += 1
+            while a < b and not s[b].isalnum():
+                b -= 1
+
+             Comparar caracteres en minúsculas
+            if s[a].lower() != s[b].lower():
+                return False
+
+            a += 1
+            b -= 1
+
+        return True
+class Solution:
     def isSameTree(self, p, q):
          If both nodes are None, they are identical
         if p is None and q is None:
