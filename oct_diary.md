@@ -5,6 +5,7 @@
 
 <img width="379" height="381" alt="image" src="https://github.com/user-attachments/assets/8f138530-7afe-4f31-a546-53a7a92f73fd" />
 <img width="425" height="251" alt="image" src="https://github.com/user-attachments/assets/c273a3ef-8bd5-4206-8720-57bea8d1a4cc" />
+<img width="1034" height="625" alt="image" src="https://github.com/user-attachments/assets/b74c659c-5113-43e0-b0bb-bc2620c6f50a" />
 
 ## 2025/10/21
     def reversePrefix(self, word: str, ch: str) -> str:
