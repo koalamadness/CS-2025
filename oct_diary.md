@@ -1,4 +1,6 @@
 # Computer Science
+## 2025/10/23
+Electro y Tutoria
 ## 2025/10/22
 4/15 
 <img width="367" height="496" alt="image" src="https://github.com/user-attachments/assets/dc2ae5fc-5d35-4c5c-877c-968a2b71fdeb" />
