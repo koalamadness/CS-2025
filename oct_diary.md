@@ -1,4 +1,6 @@
 # Computer Science
+## 2025/10/24
+
 ## 2025/10/23
 Electro y Tutoria
 ## 2025/10/22
