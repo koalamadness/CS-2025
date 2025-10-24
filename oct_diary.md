@@ -1,5 +1,22 @@
 # Computer Science
 ## 2025/10/24
+class Solution:
+    def countSegments(self, s: str) -> int:
+        is_char = False
+        inside_segment = False
+        counter = 0
+        for i in s:
+            if i != " " and not inside_segment:
+                inside_segment = True
+                counter += 1
+            
+            if i == " " and inside_segment:
+                inside_segment = False
+        return counter 
+        
+        return counter
+                
+
 
 ## 2025/10/23
 Electro y Tutoria
