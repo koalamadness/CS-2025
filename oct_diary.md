@@ -1,4 +1,7 @@
 # Computer Science
+## 2025/10/25
+Java Entity, Service, Controller
+
 ## 2025/10/24
 class Solution:
     def countSegments(self, s: str) -> int:
