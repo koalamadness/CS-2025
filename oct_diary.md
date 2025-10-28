@@ -1,4 +1,15 @@
 # Computer Science
+## 2025/10/26
+class Solution:
+    def recoverOrder(self, order: List[int], friends: List[int]) -> List[int]:
+        result = []
+        for num in order:
+            if num in friends:
+                result.append(num)
+
+        return result
+
+        
 ## 2025/10/25
 Java Entity, Service, Controller
 class Solution:
