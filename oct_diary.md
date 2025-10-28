@@ -1,7 +1,21 @@
 # Computer Science
 ## 2025/10/25
 Java Entity, Service, Controller
+class Solution:
+    def canAliceWin(self, nums: List[int]) -> bool:
+        single = 0
+        double = 0
 
+        for num in nums:
+            if num >= 10:
+                double += num
+            else:
+                single += num
+
+        if double > single or single > double:
+            return True
+        
+        return False
 ## 2025/10/24
 class Solution:
     def countSegments(self, s: str) -> int:
