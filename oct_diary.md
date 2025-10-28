@@ -8,6 +8,8 @@ class Solution:
                 result.append(num)
 
         return result
+<img width="325" height="375" alt="image" src="https://github.com/user-attachments/assets/aa97a6a7-3c10-499c-92f0-8afcfdb915ef" />
+<img width="346" height="554" alt="image" src="https://github.com/user-attachments/assets/85efc811-d08d-437d-b782-d6b9d13151fa" />
 
         
 ## 2025/10/25
