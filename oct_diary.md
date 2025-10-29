@@ -15,6 +15,8 @@ class Solution:
 <img width="329" height="579" alt="image" src="https://github.com/user-attachments/assets/481fef7c-e8e1-4926-93b5-9d010a32a28e" />
 La razón de volúmenes te dice cuántas veces cabe el volumen del cono pequeño dentro del grande.
 En este caso, el cono grande tiene 8 veces más volumen que el pequeño.
+<img width="351" height="307" alt="image" src="https://github.com/user-attachments/assets/77b33f42-6538-456e-a816-add5b0179cbc" />
+
         
 ## 2025/10/25
 Java Entity, Service, Controller
