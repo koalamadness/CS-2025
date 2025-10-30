@@ -1,6 +1,19 @@
 # Computer Science
 ## 2025/10/29
 Tutor
+class Solution:
+    def findWordsContaining(self, words: List[str], x: str) -> List[int]:
+        result = []
+
+        for i in range(len(words)):
+            words[i] = set(words[i])
+
+            if x in words[i]:
+                result.append(i)
+
+        return result
+
+            
 ## 2025/10/28
 class Solution:
     def recoverOrder(self, order: List[int], friends: List[int]) -> List[int]:
