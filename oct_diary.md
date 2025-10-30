@@ -1,4 +1,7 @@
 # Computer Science
+## 2025/10/30
+<img width="1160" height="743" alt="image" src="https://github.com/user-attachments/assets/7f36145a-17d8-4a31-84a7-bbe853e95715" />
+
 ## 2025/10/29
 Tutor
 class Solution:
