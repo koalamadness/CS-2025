@@ -1,6 +1,12 @@
 # Computer Science
 ## 2025/11/04
 class Solution:
+    def smallestEvenMultiple(self, n: int) -> int:
+        if n % 2 == 0:
+            return n
+        else:
+            return n * 2
+class Solution:
     def findMissingAndRepeatedValues(self, grid: List[List[int]]) -> List[int]:
         counter = 0
         nums = set()
