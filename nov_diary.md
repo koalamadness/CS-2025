@@ -1,6 +1,25 @@
 # Computer Science
 ## 2025/11/04
 class Solution:
+    def isFascinating(self, n: int) -> bool:
+        seen = set()
+        nums = list(range(1, 10))
+        concatenation = str(n) + str(n*2) + str(n*3)
+
+        for i in concatenation:
+            if i == "0":
+                return False
+            if i in seen:
+                return False
+            seen.add(i)
+            nums.remove(int(i))
+
+        if len(nums) == 0:
+            return True
+
+        return False
+
+class Solution:
     def numberOfSteps(self, num: int) -> int:
         steps = 0
         while num > 0:
