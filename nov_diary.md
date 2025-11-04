@@ -1,6 +1,21 @@
 # Computer Science
 ## 2025/11/04
+class Solution:
+    def distanceTraveled(self, mainTank: int, additionalTank: int) -> int:
+        total_distance = 0
+        fiveL_used = 0
 
+        while mainTank > 0:
+            mainTank -= 1
+            total_distance += 10
+            fiveL_used += 1
+
+            if fiveL_used == 5 and additionalTank > 0:
+                additionalTank -= 1
+                fiveL_used = 0
+                mainTank += 1
+
+        return total_distance
 ## 2025/11/03
 <img width="572" height="507" alt="image" src="https://github.com/user-attachments/assets/5a8df8dc-39f2-45a5-a577-83f607805ef5" />
 <img width="516" height="643" alt="image" src="https://github.com/user-attachments/assets/918de76f-1a6d-4715-b12a-f5f345467657" />
