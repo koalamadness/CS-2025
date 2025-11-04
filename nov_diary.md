@@ -1,6 +1,26 @@
 # Computer Science
 ## 2025/11/04
 class Solution:
+    def passThePillow(self, n: int, time: int) -> int:
+        reverse = False
+        counter = 1
+        while time > 0:
+
+            if not reverse:
+                counter += 1
+            else:
+                counter -= 1
+            
+            if counter == n:
+                reverse = True
+
+            if counter == 1:
+                reverse = False    
+            
+            time -= 1
+
+        return counter 
+class Solution:
     def isFascinating(self, n: int) -> bool:
         seen = set()
         nums = list(range(1, 10))
