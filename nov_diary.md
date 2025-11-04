@@ -1,6 +1,17 @@
 # Computer Science
 ## 2025/11/04
 class Solution:
+    def findClosest(self, x: int, y: int, z: int) -> int:
+        p1 = abs(x - z)
+        p2 = abs(y - z)
+
+        if p2 > p1:
+            return 1
+        elif p2 < p1:
+            return 2
+        else:
+            return 0
+class Solution:
     def smallestEvenMultiple(self, n: int) -> int:
         if n % 2 == 0:
             return n
