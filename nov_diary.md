@@ -1,6 +1,26 @@
 # Computer Science
 ## 2025/11/04
 class Solution:
+    def findMissingAndRepeatedValues(self, grid: List[List[int]]) -> List[int]:
+        counter = 0
+        nums = set()
+        result = []
+        for i in grid:
+            for j in i:
+                counter += 1
+                if j not in nums:
+                    nums.add(j)
+                else:
+                    result.append(j)
+
+        nums2 = set(range(1, counter + 1))
+        #print(nums2)
+        missing = nums2 - nums
+
+        for num in missing:
+            result.append(num)
+        return result
+class Solution:
     def distanceTraveled(self, mainTank: int, additionalTank: int) -> int:
         total_distance = 0
         fiveL_used = 0
