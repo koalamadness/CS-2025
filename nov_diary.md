@@ -1,6 +1,18 @@
 # Computer Science
 ## 2025/11/04
 class Solution:
+    def numberOfSteps(self, num: int) -> int:
+        steps = 0
+        while num > 0:
+            if num % 2 == 0:
+                num = num / 2
+            else:
+                num -= 1
+            
+            steps += 1
+
+        return steps
+class Solution:
     def commonFactors(self, a: int, b: int) -> int:
         factors_a = set()
         factors_b = set()
