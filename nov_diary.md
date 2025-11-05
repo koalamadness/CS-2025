@@ -1,6 +1,15 @@
 # Computer Science
 ## 2025/11/05
 class Solution:
+    def findNonMinOrMax(self, nums: List[int]) -> int:
+        
+        if len(nums) == 1 or len(nums) == 2:
+            return -1
+
+        nums.sort()
+
+        return nums[1]
+class Solution:
     def countSeniors(self, details: List[str]) -> int:
         
         counter = 0
