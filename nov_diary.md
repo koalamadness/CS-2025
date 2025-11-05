@@ -1,6 +1,20 @@
 # Computer Science
 ## 2025/11/05
 class Solution:
+    def hasSameDigits(self, s: str) -> bool:
+        
+        while len(s) != 2:
+        
+            digits = ""
+
+            for i in range(len(s)-1):
+                digits = digits + str((int(s[i]) + int(s[i+1])) % 10)
+               # print("int1", s[i], "inti+1", s[i + 1])
+              #  print(digits)
+            s = digits
+
+        return s[0] == s[1]    
+class Solution:
     def getSneakyNumbers(self, nums: List[int]) -> List[int]:
         digits = {}
         result = []
