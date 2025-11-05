@@ -1,6 +1,19 @@
 # Computer Science
 ## 2025/11/05
 class Solution:
+    def countSeniors(self, details: List[str]) -> int:
+        
+        counter = 0
+
+        for data in details:
+
+            age = int(data[11:13])
+            #print(age)
+            if age > 60:
+                counter += 1
+        
+        return counter
+class Solution:
     def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
         max_ones = 0
         is_consecutive = False
