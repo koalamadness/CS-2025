@@ -1,4 +1,17 @@
 # Computer Science
+## 2025/11/05
+class Solution:
+    def getSneakyNumbers(self, nums: List[int]) -> List[int]:
+        digits = {}
+        result = []
+        for num in nums:
+            if num not in digits:
+                digits[num] = 1
+            else:
+                digits[num] += 1
+                result.append(num)
+        
+        return result
 ## 2025/11/04
 class Solution:
     def passThePillow(self, n: int, time: int) -> int:
