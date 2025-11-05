@@ -1,6 +1,26 @@
 # Computer Science
 ## 2025/11/05
 class Solution:
+    def canAliceWin(self, n: int) -> bool:
+        alice = 10
+        bob = None
+
+        while True:
+
+            if n - alice < 0:
+                return False
+            
+            n -= alice 
+
+            bob = alice - 1
+
+            if n - bob < 0:
+                return True
+
+            n -= bob
+
+            alice = bob - 1        
+class Solution:
     def hasSameDigits(self, s: str) -> bool:
         
         while len(s) != 2:
