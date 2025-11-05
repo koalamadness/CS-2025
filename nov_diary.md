@@ -1,6 +1,27 @@
 # Computer Science
 ## 2025/11/05
 class Solution:
+    def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
+        max_ones = 0
+        is_consecutive = False
+        counter = 0
+
+        for i in nums:
+            if i == 1 and not is_consecutive:
+                counter += 1
+                is_consecutive = True
+            elif i == 1 and is_consecutive:
+                counter += 1
+            elif i == 0 and is_consecutive:
+                counter = 0
+                is_consecutive = False
+
+            if counter > max_ones:
+                max_ones = counter    
+        return max_ones
+
+
+class Solution:
     def canAliceWin(self, n: int) -> bool:
         alice = 10
         bob = None
