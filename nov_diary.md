@@ -1,5 +1,7 @@
 # Computer Science
 ## 2025/11/05
+<img width="676" height="651" alt="image" src="https://github.com/user-attachments/assets/41a1188b-86ac-423c-bec0-4e4cbdf6387b" />
+
 class Solution:
     def findNonMinOrMax(self, nums: List[int]) -> int:
         
