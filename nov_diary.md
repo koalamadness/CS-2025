@@ -2,6 +2,7 @@
 ## 2025/11/05
 <img width="676" height="651" alt="image" src="https://github.com/user-attachments/assets/41a1188b-86ac-423c-bec0-4e4cbdf6387b" />
 <img width="715" height="721" alt="image" src="https://github.com/user-attachments/assets/e77d8a71-d20a-4d3d-9ae7-7085785de05d" />
+<img width="663" height="589" alt="image" src="https://github.com/user-attachments/assets/c9a5ffb2-9092-4da6-99c9-27d7c7c1f609" />
 
 class Solution:
     def findNonMinOrMax(self, nums: List[int]) -> int:
