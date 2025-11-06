@@ -1,4 +1,8 @@
 # Computer Science
+## 2025/11/06
+<img width="732" height="687" alt="image" src="https://github.com/user-attachments/assets/4602da1e-c0ef-48b2-8ea2-f433f731abce" />
+<img width="1199" height="702" alt="image" src="https://github.com/user-attachments/assets/0a757ad7-572f-428c-9cc7-2b42098dc751" />
+
 ## 2025/11/05
 <img width="676" height="651" alt="image" src="https://github.com/user-attachments/assets/41a1188b-86ac-423c-bec0-4e4cbdf6387b" />
 <img width="715" height="721" alt="image" src="https://github.com/user-attachments/assets/e77d8a71-d20a-4d3d-9ae7-7085785de05d" />
