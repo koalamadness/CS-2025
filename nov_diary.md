@@ -1,6 +1,9 @@
 # Computer Science
 ## 2025/11/07
 class Solution:
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        return nums + nums
+class Solution:
     def differenceOfSum(self, nums: List[int]) -> int:
         elt_sum = 0
         digit_sum = 0
