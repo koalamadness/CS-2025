@@ -1,6 +1,15 @@
 # Computer Science
 ## 2025/11/07
 class Solution:
+    def countDigits(self, num: int) -> int:
+        num_string = str(num)
+        count = 0
+        for char in num_string:
+            if num % int(char) == 0:
+                count += 1
+
+        return count
+class Solution:
     def getFinalState(self, nums: List[int], k: int, multiplier: int) -> List[int]:
         
         for i in range(k):
