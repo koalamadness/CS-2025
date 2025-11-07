@@ -1,6 +1,17 @@
 # Computer Science
 ## 2025/11/07
 class Solution:
+    def finalString(self, s: str) -> str:
+        result = ""
+        for c in s:
+            if c != "i":
+                result += c
+            else:
+                result = result[::-1]
+
+        return result
+
+class Solution:
     def alternatingSum(self, nums: List[int]) -> int:
         total = 0
         sign = 1
