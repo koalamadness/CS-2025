@@ -1,6 +1,22 @@
 # Computer Science
 ## 2025/11/07
 class Solution:
+    def alternateDigitSum(self, n: int) -> int:
+        total = 0
+        num_string = str(n)
+        sign = 1
+
+        for num in num_string:
+            number = int(num) * sign
+            total += number
+
+            sign *= -1
+
+        return total
+
+
+
+class Solution:
     def squareIsWhite(self, coordinates: str) -> bool:
         letters = ["a", "b", "c", "d", "e", "f", "g", "h"]
     
