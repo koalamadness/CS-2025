@@ -1,6 +1,19 @@
 # Computer Science
 ## 2025/11/07
 class Solution:
+    def differenceOfSum(self, nums: List[int]) -> int:
+        elt_sum = 0
+        digit_sum = 0
+
+        for num in nums:
+            elt_sum += num
+            num_string = str(num)
+
+            for i in num_string:
+                digit_sum += int(i)
+        
+        return abs(digit_sum - elt_sum)
+class Solution:
     def alternateDigitSum(self, n: int) -> int:
         total = 0
         num_string = str(n)
