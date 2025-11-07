@@ -1,6 +1,16 @@
 # Computer Science
 ## 2025/11/07
 class Solution:
+    def alternatingSum(self, nums: List[int]) -> int:
+        total = 0
+        sign = 1
+        for num in nums:
+            total += num * sign
+
+            sign *= -1
+
+        return total
+class Solution:
     def getConcatenation(self, nums: List[int]) -> List[int]:
         return nums + nums
 class Solution:
