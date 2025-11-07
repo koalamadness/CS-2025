@@ -1,6 +1,21 @@
 # Computer Science
 ## 2025/11/07
 class Solution:
+    def squareIsWhite(self, coordinates: str) -> bool:
+        letters = ["a", "b", "c", "d", "e", "f", "g", "h"]
+    
+        letter_index = letters.index(coordinates[0]) + 1
+        number = int(coordinates[1])
+
+        if letter_index % 2 == 0 and number % 2 == 0:
+            return False
+        elif letter_index % 2 == 0 and number % 2 != 0:
+            return True
+        elif letter_index % 2 != 0 and number % 2 == 0:
+            return True
+        else:
+            return False
+class Solution:
     def countOperations(self, num1: int, num2: int) -> int:
         count = 0
 
