@@ -1,4 +1,13 @@
 # Computer Science
+## 2025/11/07
+class Solution:
+    def findNumbers(self, nums: List[int]) -> int:
+        counter = 0
+        for num in nums:
+            if len(str(num)) % 2 == 0:
+                counter += 1
+
+        return counter
 ## 2025/11/06
 <img width="732" height="687" alt="image" src="https://github.com/user-attachments/assets/4602da1e-c0ef-48b2-8ea2-f433f731abce" />
 <img width="1199" height="702" alt="image" src="https://github.com/user-attachments/assets/0a757ad7-572f-428c-9cc7-2b42098dc751" />
