@@ -1,6 +1,16 @@
 # Computer Science
 ## 2025/11/07
 class Solution:
+    def getFinalState(self, nums: List[int], k: int, multiplier: int) -> List[int]:
+        
+        for i in range(k):
+
+            min_num = min(nums)
+            index = nums.index(min_num)
+
+            nums[index] = nums[index] * multiplier
+        return nums
+class Solution:
     def findNumbers(self, nums: List[int]) -> int:
         counter = 0
         for num in nums:
