@@ -1,5 +1,18 @@
 # Computer Science
 ## 2025/11/10
+import operator
+
+class Solution:
+    def sortPeople(self, names: List[str], heights: List[int]) -> List[str]:
+        result = []
+        zipped = zip(names, heights)
+
+        zipped = list(zipped)
+
+        res = sorted(zipped, key = operator.itemgetter(1), reverse=True)
+        for pair in res:
+            result.append(pair[0])
+        return result
 class Solution:
     def rowAndMaximumOnes(self, mat: List[List[int]]) -> List[int]:
         result = [0,0]
