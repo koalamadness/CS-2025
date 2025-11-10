@@ -1,4 +1,21 @@
 # Computer Science
+## 2025/11/10
+class Solution:
+    def checkRecord(self, s: str) -> bool:
+        absent_count = 0
+        if "LLL" in s:
+            late = True
+        else:
+            late = False
+        
+        for c in s:
+            if c == "A":
+                absent_count += 1
+        
+        if absent_count < 2 and not late:
+            return True
+        
+        return False
 ## 2025/11/07
 class Solution:
     def buyChoco(self, prices: List[int], money: int) -> int:
