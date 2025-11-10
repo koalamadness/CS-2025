@@ -1,6 +1,22 @@
 # Computer Science
 ## 2025/11/10
 class Solution:
+    def rowAndMaximumOnes(self, mat: List[List[int]]) -> List[int]:
+        result = [0,0]
+        max_ones = 0
+        for i in range(len(mat)):
+            ones = sum(mat[i])
+
+            if ones > max_ones:
+                result[0] = i
+                result[1] = ones
+                max_ones = ones
+
+        return result
+
+
+
+class Solution:
     def maximumWealth(self, accounts: List[List[int]]) -> int:
         max_wealth = 0
     
