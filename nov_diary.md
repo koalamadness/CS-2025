@@ -1,5 +1,19 @@
 # Computer Science
 ## 2025/11/10
+class Solution:
+    def findValidPair(self, s: str) -> str:
+        result = ""
+        for i in range(len(s) - 1):
+            num1 = s[i]
+            num2 = s[i + 1]
+
+            if num1 == num2:
+                continue
+
+            if int(num1) == s.count(num1) and int(num2) == s.count(num2):
+                result = num1 + num2
+                return result
+        return result
 import operator
 
 class Solution:
