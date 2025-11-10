@@ -1,6 +1,18 @@
 # Computer Science
 ## 2025/11/10
 class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        max_wealth = 0
+    
+        for customer in accounts:
+            wealth = sum(customer)
+
+            if wealth > max_wealth:
+                max_wealth = wealth
+
+        return max_wealth
+
+class Solution:
     def flipAndInvertImage(self, image: List[List[int]]) -> List[List[int]]:
         
         for i in range(len(image)):
