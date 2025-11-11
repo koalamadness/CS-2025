@@ -1,6 +1,22 @@
 # Computer Science
 ## 2025/11/11
 class Solution:
+    def smallestNumber(self, n: int, t: int) -> int:
+        
+    
+    
+        while True:
+            product = 1
+            str_num = str(n)
+
+            for c in str_num:
+                product *= int(c)
+            
+            if product % t == 0:
+                return int(str_num)
+
+            n += 1
+class Solution:
     def arraySign(self, nums: List[int]) -> int:
         nums.sort()
 
