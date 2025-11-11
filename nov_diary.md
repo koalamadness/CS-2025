@@ -1,6 +1,25 @@
 # Computer Science
 ## 2025/11/11
 class Solution:
+    def distinctAverages(self, nums: List[int]) -> int:
+        nums.sort()
+        averages = []
+
+        while nums:
+
+            min_num = nums[0]
+            max_num = nums[-1]
+
+            nums.remove(nums[0])
+            nums.remove(nums[-1])
+
+            average = (max_num + min_num) / 2
+
+            if average not in averages:
+                averages.append(average)
+
+        return len(averages)
+class Solution:
     def isThree(self, n: int) -> bool:
         
         if n <= 2:
