@@ -1,6 +1,17 @@
 # Computer Science
 ## 2025/11/11
 class Solution:
+    def checkDivisibility(self, n: int) -> bool:
+        
+        str_num = str(n)
+        s=0
+        p=1
+        for c in str_num:
+            s += int(c)
+            p *= int(c)
+
+        return n % (s + p) == 0
+class Solution:
     def smallestNumber(self, n: int, t: int) -> int:
         
     
