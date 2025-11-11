@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/11/10
 class Solution:
+    def smallestIndex(self, nums: List[int]) -> int:
+        
+        for i in range(len(nums)):
+
+            str_num = str(nums[i])
+
+            sums = 0
+
+            for c in str_num:
+                sums += int(c)
+
+            if sums == i:
+                return i
+
+
+        return -1
+class Solution:
     def generateTag(self, caption: str) -> str:
         result = "#"
         
