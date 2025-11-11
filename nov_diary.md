@@ -1,6 +1,31 @@
 # Computer Science
 ## 2025/11/11
 class Solution:
+    def findCenter(self, edges: List[List[int]]) -> int:
+        count = {}
+        for edge in edges:
+            if edge[0] not in count:
+                count[edge[0]] = 1
+            else:
+                count[edge[0]] += 1
+            
+             
+            if edge[1] not in count:
+                count[edge[1]] = 1
+            else:
+                count[edge[1]] += 1
+
+        max_val = 0
+        biggest_number = 0
+        for i, j in count.items():
+            if j > max_val:
+                max_val = j
+                biggest_number = i
+
+        return biggest_number
+
+        
+class Solution:
     def distinctAverages(self, nums: List[int]) -> int:
         nums.sort()
         averages = []
