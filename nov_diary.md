@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/11/11
 class Solution:
+    def isThree(self, n: int) -> bool:
+        
+        if n <= 2:
+            return False
+        
+        if n % 2 == 0:
+            return True
+
+
+        limit = int(n**(1/2))
+
+        for i in range(3,limit+1):
+            if n % i == 0:
+                return True
+
+        return False
+class Solution:
     def minimumAverage(self, nums: List[int]) -> float:
 
         nums.sort()
