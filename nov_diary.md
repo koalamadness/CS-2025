@@ -1,6 +1,17 @@
 # Computer Science
 ## 2025/11/11
 class Solution:
+    def maxProduct(self, n: int) -> int:
+        
+        str_num = str(n)
+        num_lst = list(str_num)
+
+        num_lst.sort()
+
+        return int(num_lst[-1]) * int(num_lst[-2])
+
+
+class Solution:
     def convertTemperature(self, celsius: float) -> List[float]:
         return [celsius + 273.15, celsius * 1.80 + 32]
 class Solution:
