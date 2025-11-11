@@ -1,6 +1,28 @@
 # Computer Science
 ## 2025/11/11
 class Solution:
+    def arraySign(self, nums: List[int]) -> int:
+        nums.sort()
+
+        if nums[0] > 0:
+            return 1
+
+        count = 0
+
+        for num in nums:
+            if num == 0:
+                return 0
+
+            if num > 0:  
+                break   
+            
+            count += 1  
+        
+        if count % 2 == 0:
+            return 1
+        else:
+            return -1 
+class Solution:
     def maxProduct(self, n: int) -> int:
         
         str_num = str(n)
