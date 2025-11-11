@@ -1,6 +1,24 @@
 # Computer Science
 ## 2025/11/11
 class Solution:
+    def minimumAverage(self, nums: List[int]) -> float:
+
+        nums.sort()
+
+        averages = []
+
+        for i in range(len(nums)//2):
+            min_num = nums[0]
+            max_num = nums[-1]
+
+            del nums[0]
+            del nums[-1]
+
+            averages.append((min_num + max_num)/2)
+
+        return min(averages)
+
+class Solution:
     def checkDivisibility(self, n: int) -> bool:
         
         str_num = str(n)
