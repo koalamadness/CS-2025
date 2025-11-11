@@ -1,6 +1,22 @@
 # Computer Science
 ## 2025/11/10
 class Solution:
+    def generateTag(self, caption: str) -> str:
+        result = "#"
+        
+        words = caption.split() 
+        if len(caption.split()) > 0:
+            words[0] = words[0].lower()
+            result += words[0]
+        if len(words) > 1: 
+            for i in range(1, len(words)):
+                result += words[i].title()
+
+        if len(result) > 100:
+            result = result[:100]         
+            
+        return result
+class Solution:
     def findValidPair(self, s: str) -> str:
         result = ""
         for i in range(len(s) - 1):
