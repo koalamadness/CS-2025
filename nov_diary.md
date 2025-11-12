@@ -1,6 +1,18 @@
 # Computer Science
 ## 2025/11/12
 class Solution:
+    def arrayChange(self, nums: List[int], operations: List[List[int]]) -> List[int]:
+        # Mapa: número → índice actual en nums
+        position = {num: i for i, num in enumerate(nums)}
+
+        for old, new in operations:
+            idx = position[old]     # posición del número viejo
+            nums[idx] = new         # reemplazar en el array
+            position[new] = idx     # actualizar el mapa
+            del position[old]       # eliminar el viejo
+        return nums
+            
+class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         
         result = []
