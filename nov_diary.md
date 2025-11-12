@@ -1,6 +1,18 @@
 # Computer Science
 ## 2025/11/12
 class Solution:
+    def canMakeArithmeticProgression(self, arr: List[int]) -> bool:
+        
+        arr.sort()
+
+        diff = arr[1] - arr[0]
+
+        for i in range( len(arr) - 1 ):
+            if arr[i + 1] - arr[i] != diff:
+                return False
+
+        return True    
+class Solution:
     def isValid(self, word: str) -> bool:
         vowels = "AEIOUaeiou"
         if len(word) < 3:
