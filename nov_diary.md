@@ -1,5 +1,19 @@
 # Computer Science
 ## 2025/11/12
+class Solution:
+    def similarPairs(self, words: List[str]) -> int:
+        word_table = {}
+        count = 0
+        counter = 1
+        for word in words:
+            word_set = set(word)
+            if len(word_table) > 0:
+                for key in word_table:
+                    if word_set == word_table[key]:
+                        count += 1
+            word_table[word + str(counter) ] = word_set
+            counter += 1
+        return count
 
 class Solution:
     def isCircularSentence(self, sentence: str) -> bool:
