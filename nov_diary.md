@@ -1,4 +1,23 @@
 # Computer Science
+class Solution:
+    def halvesAreAlike(self, s: str) -> bool:
+        
+        vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+        count1 = 0
+        count2 = 0
+
+        s1 = s[:len(s)//2]
+        s2 = s[len(s)//2:]
+
+        for i in range(len(s1)):
+            if s1[i] in vowels:
+                count1 += 1
+
+            if s2[i] in vowels:
+                count2 += 1
+
+        return count1 == count2
 ## 2025/11/11
 class Solution:
     def findCenter(self, edges: List[List[int]]) -> int:
