@@ -1,4 +1,5 @@
 # Computer Science
+## 2025/11/12
 class Solution:
     def halvesAreAlike(self, s: str) -> bool:
         
