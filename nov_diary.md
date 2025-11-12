@@ -1,6 +1,32 @@
 # Computer Science
 ## 2025/11/12
 class Solution:
+    def isValid(self, word: str) -> bool:
+        vowels = "AEIOUaeiou"
+        if len(word) < 3:
+            return False
+
+        word = set(word)
+
+        consonant_counter = 0
+        vowel_counter = 0
+
+        digits = "0123456789"
+
+        for c in word:
+            if c.isalnum() and c not in vowels and c not in digits:
+                consonant_counter += 1
+            elif c.isalnum() and c in vowels:
+                vowel_counter += 1
+
+            if not c.isalnum():
+                return False
+
+        if vowel_counter > 0 and consonant_counter > 0:
+            return True
+        else:
+            return False 
+class Solution:
     def countKeyChanges(self, s: str) -> int:
         
         s = s.lower()
