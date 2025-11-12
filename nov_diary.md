@@ -1,6 +1,29 @@
 # Computer Science
 ## 2025/11/12
 class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        
+        result = []
+
+        anagram_dict = {}
+
+        for word in strs:
+            word_list = list(word)
+            copy_word = word
+            word_list.sort()
+            word = "".join(word_list)
+
+            if word not in anagram_dict:
+                anagram_dict[word] = [copy_word]
+            else:
+                anagram_dict[word].append(copy_word)
+
+
+        for key in anagram_dict:
+            result.append(anagram_dict[key])
+
+        return result
+class Solution:
     def canMakeArithmeticProgression(self, arr: List[int]) -> bool:
         
         arr.sort()
