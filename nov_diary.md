@@ -1,6 +1,17 @@
 # Computer Science
 ## 2025/11/12
 class Solution:
+    def countKeyChanges(self, s: str) -> int:
+        
+        s = s.lower()
+        count = 0
+
+        for i in range(1, len(s)):
+            if s[i] != s[i-1]:
+                count += 1
+
+        return count
+class Solution:
     def vowelStrings(self, words: List[str], left: int, right: int) -> int:
         count = 0
         vowels = "aeiou"
