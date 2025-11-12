@@ -1,6 +1,22 @@
 # Computer Science
 ## 2025/11/12
 class Solution:
+    def sortSentence(self, s: str) -> str:
+        
+        word_list = s.split()
+
+        s_list = [0] * len(word_list)
+
+        for word in word_list:
+            number = word[-1]
+            s_list[int(number) - 1] = word[:-1]
+
+        s_list = " ".join(s_list)
+
+        return s_list
+
+        
+class Solution:
     def halvesAreAlike(self, s: str) -> bool:
         
         vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
