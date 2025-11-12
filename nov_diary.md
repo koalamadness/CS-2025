@@ -1,5 +1,6 @@
 # Computer Science
 ## 2025/11/12
+
 class Solution:
     def isCircularSentence(self, sentence: str) -> bool:
         
