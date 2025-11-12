@@ -1,6 +1,17 @@
 # Computer Science
 ## 2025/11/12
 class Solution:
+    def vowelStrings(self, words: List[str], left: int, right: int) -> int:
+        count = 0
+        vowels = "aeiou"
+
+        for i in range(left, right + 1):
+            if words[i][0] in vowels and words[i][-1] in vowels:
+                count += 1
+        
+        return count 
+        
+class Solution:
     def similarPairs(self, words: List[str]) -> int:
         word_table = {}
         count = 0
