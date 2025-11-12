@@ -1,6 +1,19 @@
 # Computer Science
 ## 2025/11/12
 class Solution:
+    def isCircularSentence(self, sentence: str) -> bool:
+        
+        s_split = sentence.split()
+
+        for i in range(len(s_split) - 1):
+            if s_split[i][-1] != s_split[i+1][0]:
+                return False
+
+        if s_split[-1][-1] != s_split[0][0]:
+            return False
+
+        return True
+class Solution:
     def sortSentence(self, s: str) -> str:
         
         word_list = s.split()
