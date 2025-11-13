@@ -1,5 +1,6 @@
 # Computer Science
 ## 2025/11/12
+OA 
 class Solution:
     def arrayChange(self, nums: List[int], operations: List[List[int]]) -> List[int]:
         # Mapa: número → índice actual en nums
