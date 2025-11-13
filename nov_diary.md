@@ -1,6 +1,25 @@
 # Computer Science
 ## 2025/11/13
+class Solution:
+    def findTheArrayConcVal(self, nums: List[int]) -> int:
+        
+        total = 0
 
+        while nums:
+
+            if len(nums) > 1:
+                first_el = nums[0]
+                last_el = nums[-1]
+                del nums[0]
+                del nums[-1]
+                concatenation = str(first_el) + str(last_el)
+            else:
+                concatenation = nums[0]
+                del nums[0]
+            
+            total += int(concatenation)
+
+        return total    
 ## 2025/11/12
 OA 
 class Solution:
