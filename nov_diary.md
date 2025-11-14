@@ -1,6 +1,24 @@
 # Computer Science
 ## 2025/11/14
 class Solution:
+    def countDistinctIntegers(self, nums: List[int]) -> int:
+        
+        nums_set = set(nums)
+
+        counter = len(nums_set)
+
+        for i in range(len(nums)):
+
+            str_num = str(nums[i])[::-1]
+
+            num = int(str_num)
+
+            if num not in nums_set:
+                counter += 1 
+                nums_set.add(num)
+
+        return counter
+class Solution:
     def canBeTypedWords(self, text: str, brokenLetters: str) -> int:
         set_letters = set(brokenLetters)
 
