@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/11/14
 class Solution:
+    def canBeTypedWords(self, text: str, brokenLetters: str) -> int:
+        set_letters = set(brokenLetters)
+
+        word_list = text.split()
+
+        counter = 0
+
+        for word in word_list:
+            
+            word_set = set(word)
+
+            if word_set - set_letters == word_set:
+                counter += 1
+
+        
+        return counter
+class Solution:
     def findIntersectionValues(self, nums1: List[int], nums2: List[int]) -> List[int]:
         set1 = set(nums1)
         set2 = set(nums2)
