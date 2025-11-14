@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/11/14
+class Solution:
+    def findIntersectionValues(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        set1 = set(nums1)
+        set2 = set(nums2)
 
+        result = []
+
+        count1 = 0
+        count2 = 0
+        for i in nums1:
+            if i in set2:
+                count1 += 1
+        
+        for j in nums2:
+            if j in set1:
+                count2 += 1
+
+        return [count1, count2]
 ## 2025/11/13
 class Solution:
     def digitCount(self, num: str) -> bool:
