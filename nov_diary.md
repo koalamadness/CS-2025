@@ -1,6 +1,16 @@
 # Computer Science
 ## 2025/11/14
 class Solution:
+    def prefixCount(self, words: List[str], pref: str) -> int:
+        
+        count = 0
+
+        for word in words:
+            if pref in word and pref == word[:len(pref)]:
+                count += 1
+
+        return count
+class Solution:
     def countDistinctIntegers(self, nums: List[int]) -> int:
         
         nums_set = set(nums)
