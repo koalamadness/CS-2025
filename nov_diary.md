@@ -1,6 +1,17 @@
 # Computer Science
 ## 2025/11/24
 class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        
+        for i in range(len(nums)):
+
+            nums[i] = nums[i] ** 2
+
+
+        nums.sort()
+
+        return nums
+class Solution:
     def isPrefixOfWord(self, sentence: str, searchWord: str) -> int:
         
         s_list = sentence.split()
