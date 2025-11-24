@@ -1,5 +1,40 @@
 # Computer Science
 ## 2025/11/24
+class UndergroundSystem:
+
+    def __init__(self):
+        self.ids = {} # id: [station, t] 
+        self.avg_time = {} # station_station : [4, 2, 3] <-time
+
+    def checkIn(self, id: int, stationName: str, t: int) -> None:
+        self.ids[id] = [stationName, t] 
+
+    def checkOut(self, id: int, stationName: str, t: int) -> None:
+        time_diff = t - self.ids[id][1]
+        stations = self.ids[id][0] + "_" + stationName
+
+        if stations not in self.avg_time:
+
+            self.avg_time[stations] = [time_diff]
+
+        else:
+
+            self.avg_time[stations].append(time_diff)
+
+    def getAverageTime(self, startStation: str, endStation: str) -> float:
+        stations = startStation + "_" + endStation
+        average = sum(self.avg_time[stations]) / len(self.avg_time[stations])
+
+        return average
+
+        
+
+
+# Your UndergroundSystem object will be instantiated and called as such:
+# obj = UndergroundSystem()
+# obj.checkIn(id,stationName,t)
+# obj.checkOut(id,stationName,t)
+# param_3 = obj.getAverageTime(startStation,endStation)
 class RecentCounter:
 
     def __init__(self):
