@@ -1,5 +1,25 @@
 # Computer Science
 ## 2025/11/24
+class RecentCounter:
+
+    def __init__(self):
+        self.set = set()
+
+    def ping(self, t: int) -> int:
+        
+        self.set.add(t)
+
+        min_t = t - 3000
+
+        max_t = t
+
+        n_requests = 0
+        for num in self.set:
+
+            if num >= min_t and num <= max_t:
+                n_requests += 1
+
+        return n_requests
 class CustomStack:
 
     def __init__(self, maxSize: int):
