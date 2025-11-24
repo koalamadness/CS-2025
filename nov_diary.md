@@ -1,5 +1,31 @@
 # Computer Science
 ## 2025/11/24
+class CustomStack:
+
+    def __init__(self, maxSize: int):
+        self.maxSize = maxSize
+        self.stack = []
+
+    def push(self, x: int) -> None:
+        if len(self.stack) < self.maxSize:
+            self.stack.append(x)
+
+    def pop(self) -> int:
+        if len(self.stack) < 1:
+            return -1
+
+        x = self.stack.pop()
+        return x
+
+    def increment(self, k: int, val: int) -> None:
+        
+        if len(self.stack) < k:
+            for i in range(len(self.stack)):
+                self.stack[i] += val
+        
+        else:
+            for i in range(k):
+                self.stack[i] += val
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
         
