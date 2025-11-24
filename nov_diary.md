@@ -1,6 +1,19 @@
 # Computer Science
 ## 2025/11/24
+class Solution:
+    def isPrefixOfWord(self, sentence: str, searchWord: str) -> int:
+        
+        s_list = sentence.split()
 
+        index = 0
+        for word in s_list:
+            index += 1
+
+            if word[:len(searchWord)] == searchWord :
+
+                return index
+
+        return -1 
 class Solution:
     def scoreOfString(self, s: str) -> int:
         
