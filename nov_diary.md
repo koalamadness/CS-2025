@@ -2,6 +2,25 @@
 
 ## 2025/11/25
 class Solution:
+    def isPossibleToSplit(self, nums: List[int]) -> bool:
+        
+        count_num = {}
+
+        for num in nums:
+
+            if num not in count_num:
+
+                count_num[num] = 1
+            else:
+
+                count_num[num] += 1
+
+                if count_num[num] > 2:
+
+                    return False
+
+        return True
+class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
         
         collection = set(range(1, k + 1))
