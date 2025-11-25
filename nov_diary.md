@@ -2,6 +2,28 @@
 
 ## 2025/11/25
 class Solution:
+    def minOperations(self, nums: List[int], k: int) -> int:
+        
+        collection = set(range(1, k + 1))
+
+        set_nums = set()
+
+        count_operation = 0
+
+
+        while collection != set_nums:
+
+            num_popped = nums.pop()
+            if num_popped in collection:
+               set_nums.add(num_popped)
+
+            count_operation += 1
+
+            
+
+
+        return count_operation
+class Solution:
     def isPathCrossing(self, path: str) -> bool:
         
         coordinates = {"0_0": 1}
