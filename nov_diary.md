@@ -1,4 +1,32 @@
 # Computer Science
+
+
+class Solution:
+    def isPathCrossing(self, path: str) -> bool:
+        
+        coordinates = {"0_0": 1}
+
+        coordinate = [ 0 , 0 ]
+
+        for direction in path:
+
+            if direction == "N":
+                coordinate[1] += 1
+            elif direction == "S":
+                coordinate[1] -= 1
+            elif direction == "E":
+                coordinate[0] += 1
+            elif direction == "W":
+                coordinate[0] -= 1
+
+            string_coordinate = str(coordinate[0]) + "_" + str(coordinate[1])
+
+            if string_coordinate in coordinates:
+                return True
+            else:
+                coordinates[string_coordinate] = coordinate
+
+        return False
 ## 2025/11/24
 class UndergroundSystem:
 
