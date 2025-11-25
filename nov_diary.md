@@ -2,6 +2,34 @@
 
 ## 2025/11/25
 class Solution:
+    def winningPlayerCount(self, n: int, picks: List[List[int]]) -> int:
+        
+        winners = set()
+
+        players = {} # id : [color1, color1, color2]
+
+        for pick in picks:
+
+            player = pick[0]
+
+            color = pick[1]
+
+            if player not in players:
+
+                players[player] = [color]
+
+            else:
+
+                players[player].append(color)
+
+
+            if players[player].count(color) > player and player not in winners:
+
+                winners.add(player)
+                
+        
+        return len(winners)
+class Solution:
     def isPossibleToSplit(self, nums: List[int]) -> bool:
         
         count_num = {}
