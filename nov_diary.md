@@ -1,6 +1,35 @@
 # Computer Science
 
 ## 2025/11/25
+class FrequencyTracker:
+
+    def __init__(self):
+        self.num_dict = {}
+
+    def add(self, number: int) -> None:
+        
+        if number not in self.num_dict:
+            self.num_dict[number] = 1
+        else:
+            self.num_dict[number] += 1
+
+    def deleteOne(self, number: int) -> None:
+
+        if number in self.num_dict:
+
+            self.num_dict[number] -= 1
+
+            if self.num_dict[number] == 0:
+                del self.num_dict[number]
+        
+
+    def hasFrequency(self, frequency: int) -> bool:
+        
+        for occurence in self.num_dict.values():
+            if occurence == frequency:
+                return True
+
+        return False
 class Solution:
     def winningPlayerCount(self, n: int, picks: List[List[int]]) -> int:
         
