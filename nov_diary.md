@@ -1,5 +1,31 @@
 # Computer Science
 
+class Solution:
+    def judgeCircle(self, moves: str) -> bool:
+        
+
+        coordinates = [0, 0]
+
+        for move in moves:
+
+            if move == "L":
+
+                coordinates[0] -= 1
+
+            elif move == "R":
+
+                coordinates[0] += 1
+
+            elif move == "U":
+
+                coordinates[1] += 1
+
+            elif move == "D":
+
+                coordinates[1] -= 1
+
+        
+        return coordinates[0] == 0 and coordinates[1] == 0
 ## 2025/11/25
 class FrequencyTracker:
 
