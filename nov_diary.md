@@ -1,6 +1,7 @@
 # Computer Science
 
 ## 2025/11/26
+Try
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
         
