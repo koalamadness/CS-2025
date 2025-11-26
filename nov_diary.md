@@ -2,6 +2,22 @@
 
 ## 2025/11/26
 class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        
+        result = []
+
+        set1 = set(nums1)
+
+        set2 = set(nums2)
+
+        intersection = set1.intersection(set2)
+
+        for num in intersection:
+
+            result.append(num)
+
+        return result 
+class Solution:
     def reportSpam(self, message: List[str], bannedWords: List[str]) -> bool:
         
         banned_set = set(bannedWords)
