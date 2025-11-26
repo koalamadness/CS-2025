@@ -2,6 +2,23 @@
 
 ## 2025/11/26
 class Solution:
+    def reportSpam(self, message: List[str], bannedWords: List[str]) -> bool:
+        
+        banned_set = set(bannedWords)
+        message_set = set(message)
+
+        intersection = banned_set.intersection(message_set)
+
+        for element in intersection:
+            if message.count(element) > 1:
+                return True
+
+        if len(intersection) > 1:
+            return True
+
+
+        return False
+class Solution:
     def judgeCircle(self, moves: str) -> bool:
         
 
