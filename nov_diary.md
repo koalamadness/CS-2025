@@ -1,6 +1,18 @@
 # Computer Science
 ## 2025/11/27
 class Solution:
+    def maximizeExpressionOfThree(self, nums: List[int]) -> int:
+        
+        nums.sort()
+
+        a = nums[-1]
+
+        b = nums[-2]
+
+        c = nums[0]
+
+        return a + b - c
+class Solution:
     def maxKDistinct(self, nums: List[int], k: int) -> List[int]:
         
         nums_set = set(nums)
