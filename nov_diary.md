@@ -1,6 +1,20 @@
 # Computer Science
 
 ## 2025/11/26
+class Solution:
+    def destCity(self, paths: List[List[str]]) -> str:
+        
+        maps = {}
+
+        for path in paths:
+
+            maps[path[0]] = path[1]
+
+        for path in paths:
+
+            if path[1] not in maps:
+
+                return path[1]
 Try
 class Solution:
     def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
