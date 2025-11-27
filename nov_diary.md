@@ -1,6 +1,27 @@
 # Computer Science
 ## 2025/11/27
 class Solution:
+    def rotatedDigits(self, n: int) -> int:
+        
+        invalid_set = set(["0", "1", "3", "4", "7", "8"])
+        
+        count = 0
+        
+        if n < 2:
+            return count
+        
+        for i in range(1, n + 1):
+            
+            str_num = str(i)
+            
+            set_num = set(str_num)
+
+            if len(set_num.intersection(invalid_set)) < 1:
+                
+                count += 1
+                
+        return count
+class Solution:
     def maximizeSum(self, nums: List[int], k: int) -> int:
         
         nums.sort()
