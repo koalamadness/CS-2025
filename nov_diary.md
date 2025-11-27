@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/11/27
 class Solution:
+    def maximum69Number (self, num: int) -> int:
+        
+        str_num = str(num)
+        str_num = list(str_num)
+
+        for i in range(len(str_num)):
+
+            if str_num[i] == "6":
+
+                str_num[i] = "9"
+
+                break
+        result = ""
+        for c in str_num:
+            result += c
+        return int(result)
+class Solution:
     def maximizeExpressionOfThree(self, nums: List[int]) -> int:
         
         nums.sort()
