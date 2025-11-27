@@ -1,5 +1,16 @@
 # Computer Science
+class Solution:
+    def maxKDistinct(self, nums: List[int], k: int) -> List[int]:
+        
+        nums_set = set(nums)
 
+        nums = list(nums_set)
+
+        nums.sort(reverse = True)
+
+        nums = nums[:k]
+
+        return nums 
 ## 2025/11/26
 class Solution:
     def numJewelsInStones(self, jewels: str, stones: str) -> int:
