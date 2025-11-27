@@ -1,6 +1,20 @@
 # Computer Science
 ## 2025/11/27
 class Solution:
+    def minimumSum(self, num: int) -> int:
+        
+        nums = ''.join(sorted(str(num)))
+
+        total = 0
+
+        first_pair = nums[0] + nums[-1]
+
+        second_pair = nums[1] + nums[2]
+
+        total = int(first_pair) + int(second_pair)
+
+        return total
+class Solution:
     def rotatedDigits(self, n: int) -> int:
         
         invalid_set = set(["0", "1", "3", "4", "7", "8"])
