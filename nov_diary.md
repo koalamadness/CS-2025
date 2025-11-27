@@ -1,6 +1,25 @@
 # Computer Science
 ## 2025/11/27
 class Solution:
+    def maximizeSum(self, nums: List[int], k: int) -> int:
+        
+        nums.sort()
+
+        total = 0
+
+        while k > 0:
+
+            num_pop = nums.pop()
+
+            total += num_pop
+
+            nums.append(num_pop + 1)
+
+            k -= 1
+
+        
+        return total
+class Solution:
     def maximum69Number (self, num: int) -> int:
         
         str_num = str(num)
