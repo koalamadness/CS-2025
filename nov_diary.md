@@ -1,6 +1,18 @@
 # Computer Science
 ## 2025/11/28
 class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        count = 0
+        num_set = set(nums)
+
+        for num in num_set:
+
+            if num != 0:
+
+                count += 1
+
+        return count
+class Solution:
     def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
         
 
