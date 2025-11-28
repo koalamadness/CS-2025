@@ -1,4 +1,9 @@
 # Computer Science
+class Solution:
+    def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
+        
+
+        return "".join(word1) == "".join(word2)
 ## 2025/11/27
 class Solution:
     def findMissingElements(self, nums: List[int]) -> List[int]:
