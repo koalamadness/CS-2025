@@ -5,6 +5,34 @@ class Solution:
         
 
         return "".join(word1) == "".join(word2)
+
+class Solution:
+    def findContentChildren(self, g: List[int], s: List[int]) -> int:
+        
+        count = 0
+
+        g.sort()
+
+        s.sort()
+
+        g_p = 0
+
+        s_p = 0
+
+        if len(s) < 1:
+            return 0
+
+        while g_p < len(g) and s_p < len(s):
+
+            if s[s_p] >= g[g_p]:
+
+                count += 1
+                s_p += 1
+                g_p += 1
+            else:
+                s_p += 1
+
+        return count
 ## 2025/11/27
 class Solution:
     def findMissingElements(self, nums: List[int]) -> List[int]:
