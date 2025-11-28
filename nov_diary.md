@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/11/27
 class Solution:
+    def findMissingElements(self, nums: List[int]) -> List[int]:
+        
+        nums.sort()
+
+        min_n = nums[0]
+        max_n = nums[-1]
+
+        nums_set = set(nums)
+
+        complete_set = set( range(min_n, max_n + 1) )
+
+        lst = list(complete_set - nums_set)
+
+        lst.sort()
+
+        return lst
+class Solution:
     def minimumSum(self, num: int) -> int:
         
         nums = ''.join(sorted(str(num)))
