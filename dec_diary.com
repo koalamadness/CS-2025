@@ -1,6 +1,14 @@
 # Computer Science
 ## 2025/12/01 # to review 
 class Solution:
+    def minimumOperations(self, nums: List[int]) -> int:
+        counter = 0
+        while len(nums) != len(set(nums)):
+            counter += 1
+            nums = nums[3:]
+        
+        return counter
+class Solution:
     def minDeletion(self, s: str, k: int) -> int:
         from collections import Counter
         
