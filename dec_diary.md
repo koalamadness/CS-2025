@@ -1,6 +1,20 @@
 # Computer Science
 ## 2025/12/02
 class Solution:
+    def separateDigits(self, nums: List[int]) -> List[int]:
+        
+        result = []
+
+        for num in nums:
+
+            str_num = str(num)
+
+            for c in str_num:
+
+                result.append(int(c))
+
+        return result
+class Solution:
     def mostWordsFound(self, sentences: List[str]) -> int:
 
 
