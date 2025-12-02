@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/12/01 # to review 
 class Solution:
+    def canBeIncreasing(self, nums):
+        removed = 0
+
+        for i in range(1, len(nums)):
+            if nums[i] <= nums[i - 1]:
+                if removed == 1:
+                    return False
+                removed += 1
+
+                if i == 1 or nums[i] > nums[i - 2]:
+                    continue
+
+                if i + 1 < len(nums) and nums[i + 1] <= nums[i - 1]:
+                    return False
+
+        return True
+class Solution:
     def romanToInt(self, s: str) -> int:
         res = 0
         roman = {
