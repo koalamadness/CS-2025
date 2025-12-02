@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/12/02
 class Solution:
+    def heightChecker(self, heights: List[int]) -> int:
+        
+        expected = heights.copy()
+
+        heights.sort()
+
+        count = 0
+
+        for i in range(len(heights)):
+
+            if heights[i] != expected[i]:
+
+                count += 1
+
+        return count
+
+class Solution:
     def separateDigits(self, nums: List[int]) -> List[int]:
         
         result = []
