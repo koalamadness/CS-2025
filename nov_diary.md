@@ -1,6 +1,27 @@
 # Computer Science
 ## 2025/11/28
 class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        
+        map_s_t = {}
+        map_t_s = {}
+        
+        for cs, ct in zip(s, t):
+            
+            # si ya existe un mapping desde s → t, debe coincidir
+            if cs in map_s_t and map_s_t[cs] != ct:
+                return False
+            
+            # si ya existe un mapping desde t → s, debe coincidir
+            if ct in map_t_s and map_t_s[ct] != cs:
+                return False
+            
+            # crear el mapping en ambos sentidos
+            map_s_t[cs] = ct
+            map_t_s[ct] = cs
+        
+        return True
+class Solution:
     def makeGood(self, s: str) -> str:
         
         stack = []
