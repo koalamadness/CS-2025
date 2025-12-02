@@ -1,6 +1,23 @@
 # Computer Science
 ## 2025/12/02
 class Solution:
+    def maxFrequencyElements(self, nums: List[int]) -> int:
+        
+        from collections import Counter
+
+        freq_dict = Counter(nums)
+
+        max_value = max(freq_dict.values())
+
+        total = 0
+
+        for key in freq_dict:
+            if freq_dict[key] == max_value:
+
+                total +=freq_dict[key]
+
+        return total
+class Solution:
     def heightChecker(self, heights: List[int]) -> int:
         
         expected = heights.copy()
