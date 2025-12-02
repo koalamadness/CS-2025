@@ -1,6 +1,12 @@
 # Computer Science
 ## 2025/12/02
 class Solution:
+    def maxProduct(self, nums: List[int]) -> int:
+        
+        nums.sort()
+
+        return (nums[-2] - 1) * (nums[-1] - 1)
+class Solution:
     def maxFrequencyElements(self, nums: List[int]) -> int:
         
         from collections import Counter
