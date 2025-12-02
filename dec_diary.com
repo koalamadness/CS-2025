@@ -1,5 +1,16 @@
 # Computer Science
 ## 2025/12/01 # to review 
+--Truncate Sentence--
+class Solution:
+    def truncateSentence(self, s: str, k: int) -> str:
+        
+        s_list = s.split()
+
+        s_list = s_list[:k]
+
+        s = " ".join(s_list)
+
+        return s
 class Solution:
     def canBeIncreasing(self, nums):
         removed = 0
