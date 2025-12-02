@@ -1,4 +1,19 @@
 # Computer Science
+class Solution:
+    def mostWordsFound(self, sentences: List[str]) -> int:
+
+
+        max_num_words = 0
+        for sentence in sentences:
+
+            s_set = sentence.split(" ")
+
+            if len(s_set) > max_num_words:
+                max_num_words = len(s_set)
+
+        
+        return max_num_words
+
 ## 2025/12/01 # to review 
 --Truncate Sentence--
 class Solution:
