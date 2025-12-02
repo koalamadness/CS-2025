@@ -2,6 +2,22 @@
 ## 2025/12/01 # to review 
 --Truncate Sentence--
 class Solution:
+    def firstPalindrome(self, words: List[str]) -> str:
+        
+        res = ""
+
+        for word in words:
+
+            if word == word[::-1]:
+
+                res = word
+
+                return res
+
+        
+        return res
+--2108. Find First Palindromic String in the Array--        
+class Solution:
     def truncateSentence(self, s: str, k: int) -> str:
         
         s_list = s.split()
