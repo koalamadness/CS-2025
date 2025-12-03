@@ -1,6 +1,21 @@
 # Computer Science
 2025/12/03
 class Solution:
+    def largestAltitude(self, gain: List[int]) -> int:
+        
+        max_alt = 0
+
+        alt = 0
+
+        for i in gain:
+
+            alt += i
+
+            if alt > max_alt:
+                max_alt = alt
+
+        return max_alt
+class Solution:
     def findPeaks(self, mountain: List[int]) -> List[int]:
         result = []
         for i in range(1, len(mountain) - 1):
