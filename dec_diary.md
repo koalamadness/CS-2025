@@ -1,6 +1,16 @@
 # Computer Science
 2025/12/03
 class Solution:
+    def finalValueAfterOperations(self, operations: List[str]) -> int:
+        result = 0
+        for op in operations:
+            if "-" in op:
+                result -= 1
+            elif "+" in op:
+                result += 1
+
+        return result
+class Solution:
     def countMatches(self, items: List[List[str]], ruleKey: str, ruleValue: str) -> int:
         index = None
         if ruleKey == "type":
