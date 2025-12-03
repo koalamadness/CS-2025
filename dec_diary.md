@@ -1,4 +1,13 @@
 # Computer Science
+class Solution:
+    def findPeaks(self, mountain: List[int]) -> List[int]:
+        result = []
+        for i in range(1, len(mountain) - 1):
+            if mountain[i] > mountain[i-1] and mountain[i] > mountain[i+1]:
+
+                result.append(i)
+
+        return result
 ## 2025/12/02
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
