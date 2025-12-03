@@ -1,6 +1,24 @@
 # Computer Science
 2025/12/03
 class Solution:
+    def countMatches(self, items: List[List[str]], ruleKey: str, ruleValue: str) -> int:
+        index = None
+        if ruleKey == "type":
+            index = 0
+        elif ruleKey == "color":
+            index = 1
+        elif ruleKey == "name":
+            index = 2
+
+        count = 0
+
+        for item in items:
+
+            if ruleValue == item[index]:
+                count += 1
+
+        return count
+class Solution:
     def largestAltitude(self, gain: List[int]) -> int:
         
         max_alt = 0
