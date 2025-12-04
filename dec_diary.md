@@ -1,6 +1,26 @@
 # Computer Science
 2025/12/03
 class Solution:
+    def findErrorNums(self, nums: List[int]) -> List[int]:
+        from collections import Counter
+        num_dict = Counter(nums)
+        result = []
+        set1 = set(range(1, len(nums) + 1))
+
+        set1 = set1 - set(nums)
+
+        for num in num_dict:
+            if num_dict[num] > 1:
+
+                result.append(num)
+
+        
+        for num in set1:
+
+            result.append(num)
+
+        return result
+class Solution:
     def isThree(self, n: int) -> bool:
         count=1
         x=n//2+1
