@@ -1,6 +1,37 @@
 # Computer Science
 2025/12/03
 class Solution:
+    def toGoatLatin(self, sentence: str) -> str:
+        
+        vowels = "aeiouAEIOU"
+
+        stnc_list = sentence.split()
+
+        add_a = 1
+
+        for i in range(len(stnc_list)):
+
+            if stnc_list[i][0] in vowels:
+
+                stnc_list[i] = stnc_list[i] + "ma" + "a" * add_a
+
+            else:
+
+                if len(stnc_list[i]) < 2:
+
+                    stnc_list[i] = stnc_list[i] + "ma" + "a" * add_a
+                
+                else:
+
+                    stnc_list[i] = stnc_list[i][1:] + stnc_list[i][0] + "ma" + "a" * add_a
+
+            add_a += 1
+
+        sentence = " ".join(stnc_list)
+
+        return sentence
+
+class Solution:
     def search(self, nums: List[int], target: int) -> int:
         low = 0
         high = len(nums) - 1
