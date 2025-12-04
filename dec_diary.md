@@ -1,6 +1,24 @@
 # Computer Science
 2025/12/03
 class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        
+        s_pointer = 0
+
+        if s == "":
+            return True
+
+        for c in t:
+
+            if s[s_pointer] == c:
+
+                s_pointer += 1
+
+                if s_pointer == len(s):
+                    return True
+
+        return False
+class Solution:
     def findErrorNums(self, nums: List[int]) -> List[int]:
         from collections import Counter
         num_dict = Counter(nums)
