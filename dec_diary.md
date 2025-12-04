@@ -1,6 +1,16 @@
 # Computer Science
 2025/12/03
 class Solution:
+    def isThree(self, n: int) -> bool:
+        count=1
+        x=n//2+1
+        for i in range(1,x):
+            if n%i==0:
+                count+=1
+            
+        return count==3
+
+class Solution:
     def toGoatLatin(self, sentence: str) -> str:
         
         vowels = "aeiouAEIOU"
