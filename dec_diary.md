@@ -1,6 +1,14 @@
 # Computer Science
 2025/12/04
 class Solution:
+    def findFinalValue(self, nums: List[int], original: int) -> int:
+        
+        while original in nums:
+
+            original *=2
+
+        return original
+class Solution:
     def countPrefixes(self, words: List[str], s: str) -> int:
         count = 0
         for word in words:
