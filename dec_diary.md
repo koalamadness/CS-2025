@@ -1,5 +1,5 @@
 # Computer Science
-2025/12/03
+2025/12/04
 class Solution:
     def countPrefixes(self, words: List[str], s: str) -> int:
         count = 0
@@ -10,6 +10,7 @@ class Solution:
                 count += 1
 
         return count
+2025/12/03        
 class Solution:
     def isUgly(self, n: int) -> bool:
         
