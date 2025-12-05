@@ -1,4 +1,21 @@
 # Computer Science
+class Solution:
+    def findGCD(self, nums: List[int]) -> int:
+        
+        minn = min(nums)
+        maxn = max(nums)
+        maxGCD = 1
+        for i in range(1, (minn*maxn)):
+
+            if minn % i == 0 and maxn % i == 0 :
+
+                GCD = i
+
+                if GCD > maxGCD:
+
+                    maxGCD = GCD
+
+        return maxGCD
 2025/12/04
 class Solution:
     def maxDistinct(self, s: str) -> int:
