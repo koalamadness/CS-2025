@@ -1,4 +1,5 @@
 # Computer Science
+2025/12/05
 class Solution:
     def findGCD(self, nums: List[int]) -> int:
         
