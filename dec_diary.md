@@ -1,6 +1,10 @@
 # Computer Science
 2025/12/04
 class Solution:
+    def maxDistinct(self, s: str) -> int:
+        
+        return len(set(s))
+class Solution:
     def findFinalValue(self, nums: List[int], original: int) -> int:
         
         while original in nums:
