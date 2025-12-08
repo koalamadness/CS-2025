@@ -1,6 +1,24 @@
 # Computer Science
 2025/12/08
 class Solution:
+    def pivotArray(self, nums: List[int], pivot: int) -> List[int]:
+        
+
+        less = []
+        equal = []
+        big = []
+
+        for num in nums:
+            if num < pivot:
+                less.append(num)
+            elif num > pivot:
+                big.append(num)
+            else:
+                equal.append(num)
+
+        return less + equal + big
+            
+class Solution:
     def shuffle(self, nums: List[int], n: int) -> List[int]:
         res = []
         l1 = nums[:len(nums) // 2]
