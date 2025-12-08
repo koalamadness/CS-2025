@@ -1,6 +1,26 @@
 # Computer Science
 2025/12/08
 class Solution:
+    def findLucky(self, arr: List[int]) -> int:
+        
+        num_set = set()
+        from collections import Counter
+
+        num_dict = Counter(arr)
+
+        for num in num_dict:
+
+            if num == num_dict[num]:
+                num_set.add(num)
+
+        
+        if len(num_set) < 1:
+            return -1
+
+        return max(list(num_set))
+
+
+class Solution:
     def uniqueMorseRepresentations(self, words: List[str]) -> int:
         from string import ascii_lowercase
         morse_set = set()
