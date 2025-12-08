@@ -1,6 +1,14 @@
 # Computer Science
 2025/12/08
 class Solution:
+    def minOperations(self, nums: List[int], k: int) -> int:
+        count = 0
+        for i in nums:
+
+            if i < k:
+                count += 1
+        return count
+class Solution:
     def stableMountains(self, height: List[int], threshold: int) -> List[int]:
         res = []
         for i in range(1, len(height)):
