@@ -1,6 +1,21 @@
 # Computer Science
 2025/12/08
 class Solution:
+    def uniqueMorseRepresentations(self, words: List[str]) -> int:
+        from string import ascii_lowercase
+        morse_set = set()
+        morse_lst = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+
+        for word in words:
+            morse = ""
+            for letter in word:
+                index_letter = ascii_lowercase.index(letter)
+                morse += morse_lst[index_letter]
+
+            morse_set.add(morse)
+        
+        return len(morse_set)
+class Solution:
     def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
         
         res = []
