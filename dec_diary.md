@@ -1,4 +1,12 @@
 # Computer Science
+class Solution:
+    def defangIPaddr(self, address: str) -> str:
+        
+        address = address.split(".")
+
+        res = "[.]".join(address)
+
+        return res
 2025/12/05
 class Solution:
     def findGCD(self, nums: List[int]) -> int:
