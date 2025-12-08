@@ -1,6 +1,18 @@
 # Computer Science
 2025/12/08
 class Solution:
+    def shuffle(self, nums: List[int], n: int) -> List[int]:
+        res = []
+        l1 = nums[:len(nums) // 2]
+        l2 = nums[len(nums) // 2:]
+
+        for i in range(len(l1)):
+
+            res.append(l1[i])
+            res.append(l2[i])
+
+        return res
+class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
         return sum(nums) % k
 class Solution:
