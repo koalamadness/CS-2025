@@ -1,6 +1,16 @@
 # Computer Science
 2025/12/08
 class Solution:
+    def createTargetArray(self, nums: List[int], index: List[int]) -> List[int]:
+        
+        res = []
+
+        for i in range(len(nums)):
+
+            res.insert(index[i], nums[i])
+
+        return res
+class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
         count = 0
         for i in nums:
