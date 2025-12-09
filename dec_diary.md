@@ -1,6 +1,18 @@
 # Computer Science
 2025/12/09
 class Solution:
+    def divideArray(self, nums: List[int]) -> bool:
+        
+        from collections import Counter
+        nums_dict = Counter(nums)
+
+        for num in nums_dict:
+
+            if nums_dict[num] % 2 == 1:
+                return False
+
+        return True
+class Solution:
     def balancedStringSplit(self, s: str) -> int:
         res = 0
         count = 0
