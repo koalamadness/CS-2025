@@ -1,5 +1,21 @@
 # Computer Science
 2025/12/09
+class Solution:
+    def secondHighest(self, s: str) -> int:
+        nums = "1234567890"
+        digits = []
+        for i in range(len(s)):
+            if s[i] in nums:
+                digits.append(int(s[i]))
+        digits = set(digits)
+        if len(digits) > 0:
+            digits.remove(max(digits))
+            if len(digits) > 0:
+                return max(digits)
+            else:
+                return -1       
+        else:
+            return -1
 2025/12/08
 class Solution:
     def findThePrefixCommonArray(self, A: List[int], B: List[int]) -> List[int]:
