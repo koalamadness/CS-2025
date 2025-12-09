@@ -1,6 +1,25 @@
 # Computer Science
 2025/12/09
 class Solution:
+    def deleteGreatestValue(self, grid: List[List[int]]) -> int:
+        count = 0
+
+        while grid:  # Mientras haya filas no vacías
+            nm_del = []
+            # Encontramos el máximo de cada fila
+            for lst in grid:
+                max_n = max(lst)
+                nm_del.append(max_n)
+                lst.remove(max_n)
+
+            # Sumar el máximo de los máximos encontrados en esta iteración
+            count += max(nm_del)
+
+            # Eliminar filas vacías
+            grid = [lst for lst in grid if lst]  # Solo mantener las filas no vacías
+
+        return count
+class Solution:
     def countCharacters(self, words: List[str], chars: str) -> int:
         from collections import Counter
         count = 0
