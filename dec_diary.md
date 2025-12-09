@@ -1,6 +1,33 @@
 # Computer Science
 2025/12/09
 class Solution:
+    def decodeMessage(self, key: str, message: str) -> str:
+        key_dict = {}
+
+        key = key.replace(' ', '')
+
+        abc_pointer = 0
+
+        alpha = "abcdefghijklmnopqrstuvwxyz"
+
+        for c in key:
+
+            if c not in key_dict:
+                key_dict[c] = alpha[abc_pointer]
+                abc_pointer += 1
+
+        key_dict[" "] = " "
+        
+        #print(key_dict)
+
+        res = ""
+
+        for c in message:
+
+            res += key_dict[c]
+
+        return res
+class Solution:
     def mostFrequentEven(self, A: List[int]) -> int:
         mp={}
         val,freq =10**6,0
