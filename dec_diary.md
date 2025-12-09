@@ -1,6 +1,16 @@
 # Computer Science
 2025/12/09
 class Solution:
+    def isAcronym(self, words: List[str], s: str) -> bool:
+        
+        res = ""
+
+        for word in words:
+
+            res += word[0]
+
+        return res == s
+class Solution:
     def addDigits(self, num: int) -> int:
         
         # Continuar sumando los dígitos hasta que el número sea menor que 10
