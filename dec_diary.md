@@ -1,6 +1,21 @@
 # Computer Science
 2025/12/09
 class Solution:
+    def addDigits(self, num: int) -> int:
+        
+        # Continuar sumando los dígitos hasta que el número sea menor que 10
+        while num >= 10:
+            snum = 0
+            str_num = str(num)
+
+            # Sumar los dígitos de num
+            for i in str_num:
+                snum += int(i)  # Aquí sumamos los dígitos correctamente
+
+            num = snum  # Actualizamos num con la suma de sus dígitos
+
+        return num
+class Solution:
     def minLength(self, s: str) -> int:
         stack = []
         for c in s:
