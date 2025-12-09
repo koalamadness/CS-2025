@@ -1,6 +1,21 @@
 # Computer Science
 2025/12/09
 class Solution:
+    def mostFrequentEven(self, A: List[int]) -> int:
+        mp={}
+        val,freq =10**6,0
+        for i in A:
+            # if even element
+            if i%2==0:
+                # increase count in map
+                if i in mp: mp[i]+=1
+                else: mp[i]=1
+                # Update smallest with greatest frequency
+                if mp[i]>freq or mp[i]==freq and i<val:
+                    val, freq =i , mp[i]
+        return -1 if freq==0 else val
+        
+class Solution:
     def secondHighest(self, s: str) -> int:
         nums = "1234567890"
         digits = []
