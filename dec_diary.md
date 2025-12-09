@@ -1,6 +1,30 @@
 # Computer Science
 2025/12/09
 class Solution:
+    def countCharacters(self, words: List[str], chars: str) -> int:
+        from collections import Counter
+        count = 0
+        chars_dict = Counter(chars)
+
+        for word in words:
+
+            word_dict = Counter(word)
+            let_ct = len(word_dict)
+
+            for letter in word_dict:
+                if letter not in chars_dict:
+                    break
+                else:
+                    if chars_dict[letter] < word_dict[letter]:
+                        break
+                    else:
+                        let_ct -= 1
+
+            if let_ct == 0:
+                count += len(word)
+
+        return count
+class Solution:
     def divideArray(self, nums: List[int]) -> bool:
         
         from collections import Counter
