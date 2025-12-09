@@ -1,6 +1,24 @@
 # Computer Science
 2025/12/09
 class Solution:
+    def minLength(self, s: str) -> int:
+        stack = []
+        for c in s:
+
+            if len(stack) == 0:
+                stack.append(c)
+            else:
+                top = stack[-1]
+
+                if top == 'A' and c == "B":
+                    stack.pop()
+                elif top == 'C' and c == "D":
+                    stack.pop()
+                else:
+                    stack.append(c)
+
+        return len(stack)
+class Solution:
     def deleteGreatestValue(self, grid: List[List[int]]) -> int:
         count = 0
 
