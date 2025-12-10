@@ -1,6 +1,33 @@
 # Computer Science
 2025/12/10
 class Solution:
+    def countLargestGroup(self, n: int) -> int:
+        sum_digit = {}
+        res = 0
+        for i in range(1, n + 1):
+
+            if i < 10:
+
+                sum_digit[i] = 1
+
+            else:
+                num = 0
+                str_num = str(i)
+                for j in str_num:
+                    num += int(j)
+
+                if num not in sum_digit:
+                    sum_digit[num] = 1
+                else:
+                    sum_digit[num] += 1
+
+
+        max_freq = max(sum_digit.values())
+
+        res = list(sum_digit.values()).count(max_freq)
+
+        return res
+class Solution:
     def sumDivisibleByK(self, nums: List[int], k: int) -> int:
         
         res = 0
