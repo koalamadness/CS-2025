@@ -1,4 +1,20 @@
 # Computer Science
+class Solution:
+    def sumDivisibleByK(self, nums: List[int], k: int) -> int:
+        
+        res = 0
+        from collections import Counter
+
+        nums_dict = Counter(nums)
+        
+        for num in nums_dict:
+
+            if nums_dict[num] % k == 0:
+
+                res += (num * nums_dict[num])
+
+
+        return res
 2025/12/09
 class Solution:
     def isAcronym(self, words: List[str], s: str) -> bool:
