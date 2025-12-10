@@ -1,5 +1,22 @@
 # Computer Science
 2025/12/10
+from collections import Counter
+
+class Solution:
+    def mostCommonWord(self, paragraph: str, banned: List[str]) -> str:
+        # Usamos re.findall para extraer todas las palabras (solo letras)
+        words = re.findall(r'\b[a-zA-Z]+\b', paragraph)
+
+        # Convertir todas las palabras a minúsculas
+        words = [word.lower() for word in words]
+
+        # Usamos Counter para contar las frecuencias de las palabras
+        word_dict = Counter(words)
+
+        # Iterar sobre las palabras en word_dict y buscar la más común que no esté en banned
+        for word, freq in word_dict.most_common():
+            if word not in banned:
+                return word
 class Solution:
     def missingMultiple(self, nums: List[int], k: int) -> int:
         k_nums = set()  # Conjunto de múltiplos de k presentes en nums
