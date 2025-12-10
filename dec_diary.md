@@ -1,6 +1,29 @@
 # Computer Science
 2025/12/10
 class Solution:
+    def arrayRankTransform(self, arr: List[int]) -> List[int]:
+        num_dict = {}
+        copy = arr.copy()
+        arr.sort()
+        res = []
+
+        rank = 0
+
+        for num in arr:
+
+            if num not in num_dict:
+                rank += 1
+                num_dict[num] = rank
+
+        for num in copy:
+
+            res.append(num_dict[num])
+
+        return res
+
+
+
+class Solution:
     def capitalizeTitle(self, title: str) -> str:
         
         title_lst = title.split()
