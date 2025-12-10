@@ -1,6 +1,24 @@
 # Computer Science
 2025/12/10
 class Solution:
+    def capitalizeTitle(self, title: str) -> str:
+        
+        title_lst = title.split()
+
+        for i in range(len(title_lst)):
+            
+            if len(title_lst[i]) < 3:
+
+                title_lst[i] = title_lst[i].lower()
+
+            else:
+
+                title_lst[i] = title_lst[i].title()
+
+        title = " ".join(title_lst)
+
+        return title
+class Solution:
     def removeDuplicates(self, s: str) -> str:
         
         res = []
