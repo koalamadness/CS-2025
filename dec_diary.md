@@ -1,6 +1,27 @@
 # Computer Science
 2025/12/10
 class Solution:
+    def greatestLetter(self, s: str) -> str:
+        letters_set = set()
+        res_set = set()
+
+        for c in s:
+
+            if c.isupper():
+                letters_set.add(c)
+                if c.lower() in letters_set:
+                    res_set.add(c)
+
+            else:
+                letters_set.add(c)
+                if c.upper() in letters_set:
+                    res_set.add(c.upper())
+
+        if len(res_set) == 0:
+            return ""
+        else:
+            return max(res_set)
+class Solution:
     def countLargestGroup(self, n: int) -> int:
         sum_digit = {}
         res = 0
