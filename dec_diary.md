@@ -1,6 +1,28 @@
 # Computer Science
 2025/12/10
 class Solution:
+    def missingMultiple(self, nums: List[int], k: int) -> int:
+        k_nums = set()  # Conjunto de múltiplos de k presentes en nums
+        compl = set()   # Conjunto de múltiplos de k esperados
+
+        # Agregar múltiplos de k de nums
+        for num in nums:
+            if num % k == 0:
+                k_nums.add(num)
+
+        # Encontrar el máximo número en nums para saber hasta dónde generar los múltiplos
+        max_num = max(nums)
+
+        # Generar múltiplos de k desde k hasta un valor suficientemente grande
+        for i in range(1, (max_num // k) + 2):  # Generamos hasta un múltiplo mayor que max(nums)
+            compl.add(i * k)
+
+        # La diferencia entre los múltiplos esperados y los presentes
+        missing_multiples = compl - k_nums
+
+        # Retornar el múltiplo faltante más pequeño
+        return min(missing_multiples)
+class Solution:
     def greatestLetter(self, s: str) -> str:
         letters_set = set()
         res_set = set()
