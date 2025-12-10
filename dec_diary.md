@@ -1,5 +1,23 @@
 # Computer Science
 2025/12/10
+class Solution:
+    def removeDuplicates(self, s: str) -> str:
+        
+        res = []
+
+        for c in s:
+
+            if len(res) == 0:
+                res.append(c)
+            else:
+                top = res[-1]
+
+                if top == c:
+                    res.pop()
+                else:
+                    res.append(c)
+
+        return "".join(res)
 from collections import Counter
 
 class Solution:
