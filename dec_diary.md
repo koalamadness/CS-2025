@@ -1,5 +1,6 @@
 # Computer Science
 2025/12/12
+Ex
 class Solution:
     def countGoodSubstrings(self, s: str) -> int:
         count = 0
