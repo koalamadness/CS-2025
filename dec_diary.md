@@ -1,6 +1,17 @@
 # Computer Science
 2025/12/11
 class Solution:
+    def reverseWords(self, s: str) -> str:
+        
+        words = s.split()
+
+        for i in range(len(words)):
+            words[i] = words[i][::-1]
+
+        res = " ".join(words)
+
+        return res 
+class Solution:
     def interpret(self, command: str) -> str:
         res = ""
 
