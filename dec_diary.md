@@ -1,6 +1,18 @@
 # Computer Science
 2025/12/11
 class Solution:
+    def maximumValue(self, strs: List[str]) -> int:
+        max_val = 0
+        for s in strs:
+            if s.isnumeric():
+                val = int(s)
+            else:
+                val = len(s)
+            if val > max_val:
+                max_val = val
+
+        return max_val
+class Solution:
     def isSumEqual(self, firstWord: str, secondWord: str, targetWord: str) -> bool:
         alp = 'abcdefghijklmnopqrstuvwxyz'
         first = ""
