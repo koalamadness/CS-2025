@@ -1,6 +1,28 @@
 # Computer Science
 2025/12/12
 class Solution:
+    def countGoodSubstrings(self, s: str) -> int:
+        count = 0
+        i = 0
+        k = 2
+
+        if len(s) < 3:
+            return count
+
+        while k < len(s):
+
+            sub_str = s[i:k+1]
+
+            sb = set(sub_str)
+
+            if len(sb) == 3:
+                count += 1
+
+            i += 1
+            k += 1
+
+        return count
+class Solution:
     def numberOfEmployeesWhoMetTarget(self, hours: List[int], target: int) -> int:
         total = 0
 
