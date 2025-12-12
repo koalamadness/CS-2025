@@ -1,6 +1,9 @@
 # Computer Science
 2025/12/12
 class Solution:
+    def minLengthAfterRemovals(self, s: str) -> int:
+        return abs(s.count("a") - s.count("b"))
+class Solution:
     def numOfStrings(self, patterns: List[str], word: str) -> int:
         count = 0
         for pattern in patterns:
