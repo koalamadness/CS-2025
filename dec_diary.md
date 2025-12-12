@@ -1,5 +1,6 @@
 # Computer Science
 2025/12/11
+M
 class Solution:
     def findCommonResponse(self, responses: List[List[str]]) -> str:
         res = []
