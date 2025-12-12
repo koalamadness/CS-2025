@@ -1,6 +1,16 @@
 # Computer Science
 2025/12/12
 class Solution:
+    def numberOfEmployeesWhoMetTarget(self, hours: List[int], target: int) -> int:
+        total = 0
+
+        for hour in hours:
+
+            if hour >= target:
+                total += 1
+
+        return total
+class Solution:
     def truncateSentence(self, s: str, k: int) -> str:
         
         lst = s.split()
