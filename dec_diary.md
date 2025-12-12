@@ -1,6 +1,26 @@
 # Computer Science
 2025/12/11
 class Solution:
+    def makeFancyString(self, s: str) -> str:
+        stack = []
+        res = ""
+
+        for c in s:
+            
+            if len(stack) < 2:
+                stack.append(c)
+                res += c
+            else:
+                top = stack[-1]
+                second = stack[-2]
+
+                if top == second and top == c:
+                    continue
+                else:
+                    stack.append(c)
+                    res += c
+        return res
+class Solution:
     def percentageLetter(self, s: str, letter: str) -> int:
         import math
 
