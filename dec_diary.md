@@ -1,5 +1,17 @@
 # Computer Science
 2025/12/11
+class Solution:
+    def convertDateToBinary(self, date: str) -> str:
+        date_ls = date.split("-")
+        res = []
+        for num in date_ls:
+            d = bin(int(num))
+
+            res.append(d[2:])
+
+        res = "-".join(res)
+
+        return res
 2025/12/10
 class Solution:
     def arrayRankTransform(self, arr: List[int]) -> List[int]:
