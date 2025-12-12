@@ -1,6 +1,23 @@
 # Computer Science
 2025/12/11
 class Solution:
+    def replaceDigits(self, s: str) -> str:
+        alp = 'abcdefghijklmnopqrstuvwxyz'
+
+        res = ""
+
+        for c in s:
+            if c.isalpha():
+                last_c = c
+                res += c
+            else:
+                index = alp.index(last_c) + int(c)
+                res += alp[index]
+
+        return res
+
+        
+class Solution:
     def reverseWords(self, s: str) -> str:
         
         words = s.split()
