@@ -1,6 +1,19 @@
 # Computer Science
 2025/12/12
 class Solution:
+    def scoreOfString(self, s: str) -> int:
+        total = 0
+
+        for i in range(len(s) - 1):
+            c1 = ord(s[i])
+            c2 = ord(s[i + 1])
+
+            val = abs(c1 - c2)
+
+            total += val
+
+        return total
+class Solution:
     def minLengthAfterRemovals(self, s: str) -> int:
         return abs(s.count("a") - s.count("b"))
 class Solution:
