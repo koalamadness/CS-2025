@@ -1,6 +1,32 @@
 # Computer Science
 2025/12/11
 class Solution:
+    def furthestDistanceFromOrigin(self, moves: str) -> int:
+        
+        last_m = moves[0]
+
+        count = 0
+
+        if len(moves) < 2:
+            return 1
+
+        for move in range(1, len(moves)):
+            if move == "L":
+                count -= 1
+                last_m = "L"
+            elif move == "R":
+                count += 1
+                last_m = "R"
+            elif move == "_":
+                if last_m == "L":
+                    count -= 1
+                    last_m = "L"
+                else:
+                    count += 1
+                    last_m = "R"
+
+        return count
+class Solution:
     def differenceOfSums(self, n: int, m: int) -> int:
         num1 = 0
         num2 = 0
