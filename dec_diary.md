@@ -1,6 +1,12 @@
 # Computer Science
 2025/12/12
+class Solution:
+    def canBeEqual(self, target: List[int], arr: List[int]) -> bool:
+        
+        target.sort()
+        arr.sort()
 
+        return arr == target
 2025/12/11
 MM
 class Solution:
