@@ -1,6 +1,19 @@
 # Computer Science
 2025/12/12
 class Solution:
+    def frequencySort(self, nums: List[int]) -> List[int]:
+        from collections import Counter
+        
+        # Contar frecuencias
+        freq = Counter(nums)
+        
+        # Ordenar:
+        # 1) Por frecuencia ascendente  →  freq[x]
+        # 2) Por valor descendente       →  -x
+        nums.sort(key=lambda x: (freq[x], -x))
+        
+        return nums
+class Solution:
     def canBeEqual(self, target: List[int], arr: List[int]) -> bool:
         
         target.sort()
