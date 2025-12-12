@@ -1,6 +1,35 @@
 # Computer Science
 2025/12/11
 class Solution:
+    def interpret(self, command: str) -> str:
+        res = ""
+
+        stack = []
+
+        for c in command:
+
+            if len(stack) < 1:
+
+                if c == "G":
+                    res += "G"
+                
+                stack.append(c)
+
+            else:
+                top = stack[-1]
+                if c == "G":
+                    res += "G"
+
+                elif top == "(" and c == ")":
+                    res += "o"
+
+                elif top == "l" and c == ")":
+                    res += "al"
+
+                stack.append(c)
+
+        return res 
+class Solution:
     def convertDateToBinary(self, date: str) -> str:
         date_ls = date.split("-")
         res = []
