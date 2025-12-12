@@ -1,6 +1,20 @@
 # Computer Science
 2025/12/12
 class Solution:
+    def truncateSentence(self, s: str, k: int) -> str:
+        
+        lst = s.split()
+
+        res = []
+
+        for i in range(k):
+
+            res.append(lst[i])
+
+        res = " ".join(res)
+
+        return res 
+class Solution:
     def scoreOfString(self, s: str) -> int:
         total = 0
 
