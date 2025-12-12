@@ -1,6 +1,26 @@
 # Computer Science
 2025/12/11
 class Solution:
+    def reformatDate(self, date: str) -> str:
+        res = ""
+        months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+        datelst = date.split()
+
+        res += datelst[-1] + "-"
+        index = (months.index(datelst[1]) + 1)
+        if index < 10:  
+            res += "0" + str((index)) + "-"
+        else:
+            res += str(index) + "-"
+
+        if len(datelst[0]) < 4:
+            res += "0" + datelst[0][0]
+        else:
+            res += datelst[0][:2]
+        
+        return res
+class Solution:
     def makeFancyString(self, s: str) -> str:
         stack = []
         res = ""
