@@ -1,6 +1,23 @@
 # Computer Science
 2025/12/11
 class Solution:
+    def addSpaces(self, s: str, spaces: List[int]) -> str:
+        space_pointer = 0
+        res = ""
+        
+        for i in range(len(s)):
+            if i == spaces[space_pointer]:
+                res += " "
+                if space_pointer < len(spaces) - 1:
+                    space_pointer += 1
+                res += s[i]
+            else:
+                res += s[i]
+
+
+        return res
+            
+class Solution:
     def reformatDate(self, date: str) -> str:
         res = ""
         months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
