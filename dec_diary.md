@@ -1,6 +1,22 @@
 # Computer Science
 2025/12/11
 class Solution:
+    def frequencySort(self, s: str) -> str:
+        
+        from collections import Counter
+
+        count = Counter(s)
+
+        sorted_freq = sorted(count.items(), key=lambda x: x[1], reverse=True)
+
+        res = ""
+
+        for obj in sorted_freq:
+
+            res += (obj[0] * obj[1])
+
+        return res
+class Solution:
     def furthestDistanceFromOrigin(self, moves: str) -> int:
         
         last_m = moves[0]
