@@ -1,5 +1,24 @@
 # Computer Science
 2025/12/11
+class Solution:
+    def isSumEqual(self, firstWord: str, secondWord: str, targetWord: str) -> bool:
+        alp = 'abcdefghijklmnopqrstuvwxyz'
+        first = ""
+        second = ""
+        target = ""
+        for c in firstWord:
+            index = alp.index(c)
+            first += str(index)
+
+        for b in secondWord:
+            index = alp.index(b)
+            second += str(index)
+
+        for a in targetWord:
+            index = alp.index(a)
+            target += str(index)  
+
+        return (int(first) + int(second)) == int(target)
 MM
 class Solution:
     def isBalanced(self, num: str) -> bool:
