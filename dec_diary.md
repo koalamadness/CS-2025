@@ -1,6 +1,13 @@
 # Computer Science
 2025/12/11
 class Solution:
+    def percentageLetter(self, s: str, letter: str) -> int:
+        import math
+
+        count = s.count(letter)
+
+        return math.floor(count / len(s) * 100)
+class Solution:
     def maximumValue(self, strs: List[str]) -> int:
         max_val = 0
         for s in strs:
