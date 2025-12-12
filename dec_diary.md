@@ -1,5 +1,28 @@
 # Computer Science
 2025/12/11
+class Solution:
+    def findCommonResponse(self, responses: List[List[str]]) -> str:
+        res = []
+        res_dict = {}
+
+        for response in responses:
+            set_r = set(response)
+
+            for r in set_r:
+                if r not in res_dict:
+                    res_dict[r] = 1
+                else:
+                    res_dict[r] += 1
+
+        rd = sorted(res_dict.items(), key=lambda x: x[1], reverse=True)
+
+        most_c = rd[0][1]
+
+        for r in res_dict:
+            if res_dict[r] == most_c:
+                res.append(r)
+
+        return min(res)
 MM
 class Solution:
     def frequencySort(self, s: str) -> str:
