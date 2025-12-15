@@ -1,6 +1,7 @@
 # Computer Science
 2025/12/15
-
+SELECT name, population , area FROM World
+WHERE area >= 3000000 OR population >= 25000000;
 SELECT tweet_id FROM Tweets WHERE CHAR_LENGTH(content) > 15;
 SELECT product_id
 FROM Products
