@@ -1,4 +1,8 @@
 # Computer Science
+SELECT product_id
+FROM Products
+WHERE low_fats = 'Y'
+  AND recyclable = 'Y';
 2025/12/12
 M
 Ex
