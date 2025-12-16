@@ -1,5 +1,9 @@
 # Computer Science
 2025/12/16
+SELECT * FROM movies WHERE year BETWEEN 1995 AND 2003;
+SELECT * FROM movies WHERE year NOT BETWEEN 2000 AND 2010;
+SELECT * FROM movies WHERE year BETWEEN 2000 AND 2010;
+SELECT * FROM movies WHERE id == 6;
 SELECT title FROM movies;
 SELECT director  FROM movies;
 SELECT title, director  FROM movies;
