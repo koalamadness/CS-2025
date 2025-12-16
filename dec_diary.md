@@ -1,5 +1,10 @@
 # Computer Science
 2025/12/16
+SELECT DISTINCT director FROM movies ORDER BY director;
+SELECT * FROM movies ORDER BY year DESC LIMIT 4;
+SELECT * FROM movies ORDER BY title ASC LIMIT 5;
+SELECT * FROM movies ORDER BY title ASC LIMIT 5 OFFSET 5;
+
 SELECT * FROM movies WHERE title LIKE "%Toy Story%";
 SELECT * FROM movies WHERE director LIKE "John Lasseter";
 SELECT * FROM movies WHERE director NOT LIKE "John Lasseter";
