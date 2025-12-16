@@ -1,5 +1,10 @@
 # Computer Science
 2025/12/16
+SELECT * FROM movies WHERE title LIKE "%Toy Story%";
+SELECT * FROM movies WHERE director LIKE "John Lasseter";
+SELECT * FROM movies WHERE director NOT LIKE "John Lasseter";
+SELECT * FROM movies WHERE title LIKE "%WALL-%";
+
 SELECT * FROM movies WHERE year BETWEEN 1995 AND 2003;
 SELECT * FROM movies WHERE year NOT BETWEEN 2000 AND 2010;
 SELECT * FROM movies WHERE year BETWEEN 2000 AND 2010;
